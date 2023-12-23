@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgba(48, 129, 208,0.8);
+}
+/* root */
+:root{
+    --txt-color:white;
+    --bg-color:white;
+    --cursor:pointer;
+}
+/* navigation bar */
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color:#3081D0;
+}
+/* logo */
+nav .logo i,h1,nav>button{
+    cursor:var(--cursor);
+}
+nav .logo i{
+    font-size: 25px;
+    color:var(--txt-color);
+}
+nav .logo h1{
+    color:var(--txt-color);
+} 
+/* flex-properties */
+nav .logo,nav .nav_title,nav .nav_title .btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .logo{
+    gap:10px;
+}
+/* nav_Title */
+nav .nav_title{
+    gap:30px;
+}
+nav .nav_title a{
+    color:var(--txt-color);
+    text-decoration:none;
+    text-transform:capitalize;
+    font-size:19px;
+    letter-spacing: 1px;
+}
+/* moving line */
+nav .nav_title div p{
+    background-color: var(--bg-color);
+    width:0%;
+    height:2px;
+    transition: all 1s cubic-bezier(.17,.67,.83,.67);
+    position: relative;
+    top:6px;
+}
+nav .nav_title div a:hover ~p{
+    width:100%;
+}
+/* sign up button */
+nav>button{
+    background-color: var(--bg-color);
+    border:none;
+    border: 2px solid transparent;
+    padding: 7px 15px;
+    font-size:18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius:40px;   
+    transition: all 1s;
+}
+nav>button:hover{
+    color:var(--txt-color);
+    background-color: tomato;
+    border: 2px solid white;
+}
+/* menu bar */
+nav label,nav input{
+    display:none;
+}
+/* download icon */
+nav .nav_title .btn{
+    color: var(--txt-color);
+    gap:10px;
+    font-size: 18px;
+    display: none;
+}
+@media only screen and (min-width:200px) and (max-width:1024px){
+    nav{
+        position: relative;
+    }
+    /* menu bar */
+    nav label{
+        display:block;
+    }
+    nav .fa-bars{
+        font-size: 24px;
+        position: absolute;
+        top:22px;
+        right:30px;
+        border: 2px solid var(--txt-color);
+        color: var(--txt-color);
+        padding: 7px;
+        z-index: 12;
+    }
+    /* nav title    */
+    nav .nav_title{
+        position: absolute;
+        top:-500px;
+        right:0;
+        background-color:rgba(218, 204, 204,0.3);
+        width:calc(100% - 45%);
+        flex-direction: column;
+        gap:15px; 
+        transition: all 1.5s cubic-bezier(.17,.67,.83,.67);
+        align-items: flex-start;
+        padding:100px 50px 50px 50px;
+    }
+    nav .nav_title div>a{
+        color: black;
+        font-weight: bold;
+    }
+    /* discard logo hiding */
+    nav>#lbl:checked ~.nav_title{
+        top:0px;
+    }
+    nav>button{
+        margin-right: 40px;
+        position: relative;
+        z-index: 10;
+    }
+    /* download icon */
+    nav .nav_title .btn{
+        background-color: #3081D0;
+        color: var(--txt-color);
+        padding: 10px 25px;
+        border-radius: 30px;
+        align-self: center;
+        margin-top: 20px;
+    }
+    /* sign up button */
+    /* nav>button{
+        background-color:#3081D0;
+        color: var(--txt-color);
+        font-weight: 0;
+    }        */
+    nav .nav_title .btn{
+        display:block;
+    }
+}
+@media only screen and (min-width:707px) and (max-width:875px){
+     /* nav title    */
+    nav .nav_title{
+        width:60%;
+    }
+}
+@media only screen and (min-width:425px) and (max-width:707px){
+     /* nav title    */
+    nav .nav_title{
+        width:65%;
+    }
+}
+@media only screen and (min-width:425px) and (max-width:593px){
+     /* nav title    */
+    nav .nav_title{
+        width:75%;
+    }
+}
+@media only screen and (min-width:425px) and (max-width:523px){
+     /* nav title    */
+    nav .nav_title{
+        width:80%;
+    }
+}
+@media only screen and (min-width:200px) and (max-width:500px){
+    /* navigation bar */
+    nav{
+        padding: 10px 20px;
+    }
+     /* menu bar */
+    nav .fa-bars{
+        font-size: 20px;
+        position: absolute;
+        top:10px;
+        right:20px;
+        border: 2px solid var(--txt-color);
+        color: var(--txt-color);
+        padding: 7px;
+        z-index: 10;
+    }
+    /* logo */
+    nav .logo{
+        position: relative;
+        z-index: 10;
+    }
+    nav .logo i{
+        font-size: 20px;
+    }
+    nav .logo h1{
+        font-size: 20px;
+    } 
+    /* sign up button */
+    nav>button{
+        padding: 5px 10px;
+        font-size:15px;
+        margin-right: 50px;
+    }
+     /* nav title    */
+    nav .nav_title{
+        width:100%;
+        padding:100px 30px 30px 30px;
+    }
+    nav .nav_title a{
+        font-size: 16px;
+    }
+    /* discard logo hiding */
+    nav>#lbl:checked ~.nav_title{
+        top:-20px;
+    }
+}
