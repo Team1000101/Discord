@@ -7,18 +7,86 @@
     background-image: linear-gradient(#0067e0 70%, white 30%) ;
     height: 100vh;
     width:100% ;
-    padding:100px 50px 0px 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
 }
-.container .img-1{
-    width:100% ;
-    height: 80vh;
+.img-1{
+    width:90%;
+    height: 90vh;
     object-fit:cover;
-    vertical-align: middle;
-    border-radius: 5px;    
+    border-radius: 5px; 
+    position: absolute; 
+    top: 50px; 
 }
+/* ------------------------------------- container end--------------------------------------------------------- */
 .container1{
     min-height: 100vh;
     width: auto;
-    padding:20px 50px 0 50px;
+    padding:25px 45px;
 }
+.discard{
+    font-family: 'Kanit', sans-serif;
+    color: blue;
+    line-height: 20px;
+}
+.header1{
+    font-family: 'Kanit', sans-serif;
+    line-height:35px;
+    font-size: 40px; 
+}
+.header1:hover{
+    cursor: pointer;
+    color: blue;
+}
+.boxes{
+    padding-top:50px ;
+    display: flex;
+    justify-content: start;
+    align-items:start;
+    height: 30vh;
+    gap:20px;
+}
+.box1{ height:400px ;
+       width:400px;
+}
+.box1 p{
+    font-family: 'Kanit', sans-serif;
+    color: blue;
+}.box1 h3{
+    font-family: 'Oswald', sans-serif;}
+.box1 h3:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.box2{height:400px ;
+    width:400px;}
+.box2 p{
+    font-family: 'Kanit', sans-serif;
+    color:blue;
+}
+.box2 h3{
+    font-family: 'Oswald', sans-serif;
+}
+.box2 h3:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.img-2{
+    height:200px;
+    width:400px;
+    border-radius:5px ;
+}
+.img-3{
+    height:200px;
+    width:400px;
+    border-radius:5px ;
+}
+
+
+
 
