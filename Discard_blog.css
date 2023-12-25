@@ -46,30 +46,35 @@
     display: flex;
     justify-content: start;
     align-items:start;
-    height: 30vh;
     gap:20px;
 }
-.box1{ height:400px ;
+.box1{ height:270px ;
        width:400px;
 }
 .box1 p{
     font-family: 'Kanit', sans-serif;
     color: blue;
-}.box1 h3{
-    font-family: 'Oswald', sans-serif;}
+    font-size:12px ;
+    line-height:25px;
+}.box1 h3{ font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+   }
 .box1 h3:hover{
     color: blue;
     cursor: pointer;
 }
 
-.box2{height:400px ;
+.box2{height:270px ;
     width:400px;}
 .box2 p{
     font-family: 'Kanit', sans-serif;
     color:blue;
+    line-height:25px;
+    font-size:12px ;
 }
 .box2 h3{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
 }
 .box2 h3:hover{
     color: blue;
@@ -77,13 +82,86 @@
 }
 
 .img-2{
-    height:200px;
+    height:180px;
     width:400px;
     border-radius:5px ;
 }
 .img-3{
-    height:200px;
+    height:180px;
     width:400px;
+    border-radius:5px ;
+}
+.boxes-1{
+    height: 300px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.box3{ height:250px ;
+    width:260px;
+}
+.box4{ height:250px ;
+    width:260px;
+}
+.box5{height:250px ;
+ width:260px;}
+.box3 p{
+    font-family: 'Kanit', sans-serif;
+    color: blue;
+    line-height:25px;
+    font-size:12px ;
+}
+.box4 p{
+ font-family: 'Kanit', sans-serif;
+ color:blue;
+ line-height:25px;
+    font-size:12px ;
+}
+.box5 p{
+    font-family: 'Kanit', sans-serif;
+    color:blue;
+    line-height:25px;
+    font-size:12px ;
+   }
+.box3 h3{
+    font-family: 'Kanit', sans-serif;  
+    line-height: 20px;
+}
+.box4 h3{
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+}
+.box5 h3{
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+}
+.box3 h3:hover{
+    color: blue;
+    cursor: pointer;
+}
+.box4 h3:hover{
+ color: blue;
+ cursor: pointer;
+}
+.box5 h3:hover{
+    color: blue;
+    cursor: pointer;
+  }
+.img-4{
+ height:150px;
+ width:260px;
+ border-radius:5px ;
+}
+.img-5{
+ height:150px;
+ width:260px;
+ border-radius:5px ;
+}
+.img-6{
+    height:150px;
+    width:260px;
     border-radius:5px ;
 }
 
