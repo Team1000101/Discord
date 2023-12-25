@@ -46,30 +46,35 @@
     display: flex;
     justify-content: start;
     align-items:start;
-    height: 30vh;
     gap:20px;
 }
-.box1{ height:400px ;
+.box1{ height:270px ;
        width:400px;
 }
 .box1 p{
     font-family: 'Kanit', sans-serif;
     color: blue;
-}.box1 h3{
-    font-family: 'Oswald', sans-serif;}
+    font-size:12px ;
+    line-height:25px;
+}.box1 h3{ font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+   }
 .box1 h3:hover{
     color: blue;
     cursor: pointer;
 }
 
-.box2{height:400px ;
+.box2{height:270px ;
     width:400px;}
 .box2 p{
     font-family: 'Kanit', sans-serif;
     color:blue;
+    line-height:25px;
+    font-size:12px ;
 }
 .box2 h3{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
 }
 .box2 h3:hover{
     color: blue;
@@ -77,16 +82,285 @@
 }
 
 .img-2{
-    height:200px;
+    height:180px;
     width:400px;
     border-radius:5px ;
 }
 .img-3{
-    height:200px;
+    height:180px;
     width:400px;
     border-radius:5px ;
 }
+.boxes-1{
+    height: 300px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.box3{ height:250px ;
+    width:260px;
+}
+.box4{ height:250px ;
+    width:260px;
+}
+.box5{height:250px ;
+ width:260px;}
+.box3 p{
+    font-family: 'Kanit', sans-serif;
+    color: blue;
+    line-height:25px;
+    font-size:12px ;
+}
+.box4 p{
+ font-family: 'Kanit', sans-serif;
+ color:blue;
+ line-height:25px;
+    font-size:12px ;
+}
+.box5 p{
+    font-family: 'Kanit', sans-serif;
+    color:blue;
+    line-height:25px;
+    font-size:12px ;
+   }
+.box3 h3{
+    font-family: 'Kanit', sans-serif;  
+    line-height: 20px;
+}
+.box4 h3{
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+}
+.box5 h3{
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+}
+.box3 h3:hover{
+    color: blue;
+    cursor: pointer;
+}
+.box4 h3:hover{
+ color: blue;
+ cursor: pointer;
+}
+.box5 h3:hover{
+    color: blue;
+    cursor: pointer;
+  }
+.img-4{
+ height:150px;
+ width:260px;
+ border-radius:5px ;
+}
+.img-5{
+ height:150px;
+ width:260px;
+ border-radius:5px ;
+}
+.img-6{
+    height:150px;
+    width:260px;
+    border-radius:5px ;
+}
+.boxes-2{
+    height: 300px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.box6{ height:250px ;
+    width:260px;
+}
+.box7{ height:250px ;
+    width:260px;
+}
+.box8{height:250px ;
+ width:260px;}
+.box6 p{
+    font-family: 'Kanit', sans-serif;
+    color: blue;
+    line-height:25px;
+    font-size:12px ;
+}
+.box7 p{
+ font-family: 'Kanit', sans-serif;
+ color:blue;
+ line-height:25px;
+    font-size:12px ;
+}
+.box8 p{
+    font-family: 'Kanit', sans-serif;
+    color:blue;
+    line-height:25px;
+    font-size:12px ;
+   }
+.box6 h3{
+    font-family: 'Kanit', sans-serif;  
+    line-height: 20px;
+}
+.box7 h3{
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+}
+.box8 h3{
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+}
+.box6 h3:hover{
+    color: blue;
+    cursor: pointer;
+}
+.box7 h3:hover{
+ color: blue;
+ cursor: pointer;
+}
+.box8 h3:hover{
+    color: blue;
+    cursor: pointer;
+  }
+.img-7{
+ height:150px;
+ width:260px;
+ border-radius:5px ;
+}
+.img-8{
+ height:150px;
+ width:260px;
+ border-radius:5px ;
+}
+.img-9{
+    height:150px;
+    width:260px;
+    border-radius:5px ;
+}
+/* ----------------------------------------- container1 end------------------------------------------------ */
+.container2{
+    height: 120vh;
+    width: 100%;
+}
+.boxes-3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color:rgb(218, 205, 180);
+    border-radius:10px ;
+    padding: 20px;
+}
+.boxes-3 .box9{
+    width:40% ;
+    height: 100%;
+    padding: 20px;
+}
+.box9 p{
+    font-family: 'Kanit', sans-serif;
+    line-height: 30px;
+}
+.box9 h2{
+    font-family: 'Kanit', sans-serif;
+    line-height:30px ;
+    padding-bottom: 15px;
+    font-size: 40px;
+    color:blue;
+}
+.img-10{
+    height: 130px;
+    width: 80%;
+    border-radius: 10px;
+}
+.box9 h6{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.box9 button{
+    font-family: 'Kanit', sans-serif;
+    background-color: #0067e0;
+    border:none;
+    color: white;
+    border-radius: 20px;
+    width: auto;
+    padding: 10px;
+}
 
+.boxes-3 .box10{
+    width:65% ;
+    height: 100%;
+}
+.box11{
+    height: 55%;
+}
+.img-11{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+.box11 p{
+    font-family: 'Kanit', sans-serif;
+    padding-top: 10px;
+}
+.box11 p:hover{
+    color: #0067e0;
+}
+.box12{
+    height: 45%;
+    display: flex;
+    gap:5px;
+}
+.box-13{
+    width: 33%;
+    
+}
+.box-13 p{
+    font-family: 'Kanit', sans-serif;
+    line-height: 15px;
+    padding-top:10px;
+}
+.box-13 p:hover{
+    color: #0067e0;
+}
+.img-12{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
+.box-14{
+    width: 33%;
+}
+.box-14 p{
+    font-family: 'Kanit', sans-serif;
+    line-height: 15px;
+    padding-top:10px;
+}
+.box-14 p:hover{
+    color: #0067e0;
+}
+.img-13{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
+.box-15{
+    width: 33%;
+}
+.box-15 p{
+    font-family: 'Kanit', sans-serif;
+    line-height: 15px;
+    padding-top:10px;
+}
+.box-15 p:hover{
+    color: #0067e0;
+}
+.img-14{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
 
 
 
