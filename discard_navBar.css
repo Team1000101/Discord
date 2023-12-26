@@ -256,12 +256,17 @@ nav .nav_title .btn{
     left:-40px;
 }
 }
+section{
+    margin-top:85px;
+}
 /* ---------------------------------------------------fOOter------------------------------------- */
 footer{
+    position:relative;
+    bottom:0;
+    left:0;
     background-color: #11235A;
     width: 100%;
     padding:50px 20px;
-    margin-top:85px;
 }
 /* language select */
 footer .col1>.select{
@@ -315,7 +320,7 @@ footer>.row1 .col1{
 footer>.row1 .col2{
     width:100%;
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 }
 footer{
     color:var(--txt-color);
