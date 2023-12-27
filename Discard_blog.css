@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     background-image: linear-gradient(#0067e0 70%, white 30%) ;
@@ -241,6 +243,7 @@
 .container2{
     height: 120vh;
     width: 100%;
+
 }
 .boxes-3{
     height: 100%;
@@ -361,6 +364,266 @@
     height: 120px;
     border-radius: 5px;
 }
+/* ----------------------------------------------container2 end------------------------- */
+.container3{
+    height: 140vh;
+    width: 100%;
+    padding-top:50px ;
+}
+.boxes-4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color:rgb(218, 205, 180);
+    border-radius:10px ;
+    padding: 20px;
+}
+.boxes-4 .box16{
+    width:40% ;
+    height: 100%;
+    padding: 20px;
+}
+.box16 p{
+    font-family: 'Kanit', sans-serif;
+    line-height: 30px;
+}
+.box16 h2{
+    font-family: 'Kanit', sans-serif;
+    line-height:30px ;
+    padding-bottom: 15px;
+    font-size: 40px;
+    color:blue;
+}
+.img-15{
+    height: 130px;
+    width: 80%;
+    border-radius: 10px;
+}
+.box16 h6{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.box16 button{
+    font-family: 'Kanit', sans-serif;
+    background-color: #0067e0;
+    border:none;
+    color: white;
+    border-radius: 20px;
+    width: auto;
+    padding: 10px;
+}
+
+.boxes-4 .box17{
+    width:65% ;
+    height: 100%;
+}
+.box18{
+    height: 55%;
+}
+.img-16{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+.box18 p{
+    font-family: 'Kanit', sans-serif;
+    padding-top: 10px;
+}
+.box18 p:hover{
+    color: #0067e0;
+}
+.box19{
+    height: 45%;
+    display: flex;
+    gap:5px;
+}
+.box-20{
+    width: 33%;
+    
+}
+.box-20 p{
+    font-family: 'Kanit', sans-serif;
+    line-height: 15px;
+    padding-top:10px;
+}
+.box-20 p:hover{
+    color: #0067e0;
+}
+.img-17{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
+.box-21{
+    width: 33%;
+}
+.box-21 p{
+    font-family: 'Kanit', sans-serif;
+    line-height: 15px;
+    padding-top:10px;
+}
+.box-21 p:hover{
+    color: #0067e0;
+}
+.img-18{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
+.box-22{
+    width: 33%;
+}
+.box-22 p{
+    font-family: 'Kanit', sans-serif;
+    line-height: 15px;
+    padding-top:10px;
+}
+.box-22 p:hover{
+    color: #0067e0;
+}
+.img-19{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
+/* -------------------------------container3 end-------------------------- */
+.container4{
+    height: 130vh;
+    width: 100%;
+    padding-top:50px ;
+}
+.boxes-5{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color:rgb(218, 205, 180);
+    border-radius:10px ;
+    padding: 20px;
+}
+.boxes-5 .box23{
+    width:40% ;
+    height: 100%;
+    padding: 20px;
+}
+.box23 p{
+    font-family: 'Kanit', sans-serif;
+    line-height: 30px;
+}
+.box23 h2{
+    font-family: 'Kanit', sans-serif;
+    line-height:30px ;
+    padding-bottom: 15px;
+    font-size: 40px;
+    color:blue;
+}
+.img-20{
+    height: 130px;
+    width: 80%;
+    border-radius: 10px;
+}
+.box23 h6{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.box23 button{
+    font-family: 'Kanit', sans-serif;
+    background-color: #0067e0;
+    border:none;
+    color: white;
+    border-radius: 20px;
+    width: auto;
+    padding: 10px;
+}
+.box24{
+    width:60% ;
+    height:100% ;
+}
+.box25{
+    width:100% ;
+    display: flex;
+    gap:10px;
+    height: 50%;
+}
+.box26{
+    width:50% ;
+    height:100%;
+}
+.box26 p{
+    line-height: 17px;
+    padding-top:10px ;
+}
+.box26 p:hover{
+    color:blue;
+}
+.img-21{
+    width:100%;
+    height:60%;
+    border-radius: 5px;
+}
+.box27{
+    width:50% ;
+    height:100%;
+}
+.box27 p{
+    line-height: 17px;
+    padding-top:10px ;
+}
+.box27 p:hover{
+    color:blue;
+}
+.img-22{
+    width:100%;
+    height:60%;
+    border-radius: 5px;
+}
+.box28{
+    width:100% ;
+    display: flex;
+    gap:10px;
+    height:100%;
+}
+.box29{
+    width:50% ;
+    height:50%;
+}
+.box29 p{
+    line-height: 17px;
+    padding-top:10px ;
+}
+.box29 p:hover{
+    color:blue;
+}
+.box30{
+    width:50% ;
+    height:50%;
+}
+.box30 p{
+    line-height: 17px;
+    padding-top:10px ;
+}
+.box30 p:hover{
+    color:blue;
+}
+.img-23{
+    width:100%;
+    height:60%;
+    border-radius: 5px;
+}
+.img-24{
+    width:100%;
+    height:60%;
+    border-radius: 5px;
+}
+
+
+
+
 
 
 
