@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+/* root */
+:root{
+    --txt-color:white;
+    --bg-color:white;
+    --cursor:pointer;
+}
+/* navigation bar */
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color:#0067e0;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+}
+/* logo */
+nav .logo i,h1,nav>button{
+    cursor:var(--cursor);
+}
+nav .logo i{
+    font-size: 25px;
+    color:var(--txt-color);
+    transition: all 1s;
+}
+nav .logo h1{
+    color:var(--txt-color);
+    transition: all 0.5s;
+} 
+nav .logo:hover h1{
+    transform: matrix(1.1,0,0,1.1,10,0);
+}
+nav .logo:hover i{
+    transform: scale(1.3);
+    background-color: white;
+    color: #0067e0;
+    padding:2px;
+    border-radius: 50%;
+}
+/* flex-properties */
+nav .logo , nav .nav_title , nav .nav_title .btn , footer>.col1>.icon , footer>.col1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .logo{
+    gap:10px;
+}
+/* nav_Title */
+nav .nav_title{
+    gap:30px;
+    transition: all 0.5s;
+}
+nav .nav_title a{
+    color:var(--txt-color);
+    text-decoration:none;
+    text-transform:capitalize;
+    font-size:19px;
+    letter-spacing: 1px;
+    font-weight:500;
+}
+/* moving line */
+nav .nav_title div p{
+    background-color: var(--bg-color);
+    width:0%;
+    height:2px;
+    transition: all 1s cubic-bezier(.17,.67,.83,.67);
+    position: relative;
+    top:6px;
+}
+nav .nav_title div a:hover ~p{
+    width:100%;
+}
+nav:has(.logo:nth-child(1):hover) .nav_title div p{
+    width:100%;
+}
+nav:has(.logo:nth-child(1):hover) .nav_title div>p{
+    background-color: #0067e0;
+}
+/* sign up button */
+nav>button{
+    background-color: var(--bg-color);
+    border:none;
+    border: 2px solid transparent;
+    padding: 7px 15px;
+    font-size:18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius:40px;   
+    transition: all 1s;
+}
+nav>button:hover{
+    color:#3081D0;
+    background-color:white;
+}
+/* menu bar */
+nav label,nav input{
+    display:none;
+}
+/* download icon */
+nav .nav_title .btn{
+    color: var(--txt-color);
+    gap:10px;
+    font-size: 18px;
+    display: none;
+}
+@media only screen and (min-width:200px) and (max-width:1024px){
+    /* menu bar */
+    nav label{
+        display:block;
+    }
+    nav .fa-bars{
+        font-size: 24px;
+        position: absolute;
+        top:22px;
+        right:30px;
+        border: 2px solid var(--txt-color);
+        color: var(--txt-color);
+        padding: 7px;
+        z-index: 12;
+    }
+    nav:has(input:nth-child(3):checked) label .fa-bars{
+        border: 2px solid #3081D0;
+        color: #3081D0;
+    }
+    nav:has(input:nth-child(3):checked) >button{
+        background-color: #3081D0;
+        color: var(--txt-color);
+    }
+    /* nav title    */
+    nav .nav_title{
+        position: absolute;
+        top:-500px;
+        right:0;
+        background-color:white;
+        width:calc(100% - 55%);
+        flex-direction: column;
+        gap:15px;
+        z-index:5; 
+        transition: all 1.0s;
+        align-items: flex-start;
+        padding:100px 50px 50px 50px;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    nav .nav_title div>a{
+        color: black;
+        font-weight: bold;
+    }
+    /* discard logo hiding */
+    nav>#lbl:checked ~.nav_title{
+        top:0px;
+    }
+    /* logo moving */
+    nav>.logo{
+        position: absolute;
+        z-index: 6;
+    }
+    nav:has(input:nth-child(3):checked) .logo h1,nav:has(input:nth-child(3):checked) .logo i{
+        color:#3081D0;
+    }
+    nav>button{
+        margin-right: 40px;
+        position: relative;
+        z-index:6;
+    }
+    /* download icon */
+    nav .nav_title .btn{
+        width:100%;
+        background-color: #3081D0;
+        color: var(--txt-color);
+        padding: 10px 25px;
+        border-radius: 30px;
+        align-self: center;
+        margin-top: 20px;
+        text-align: center;
+    }
+    nav .nav_title .btn{
+        display:block;
+    }
+}
+@media only screen and (min-width:707px) and (max-width:875px){
+     /* nav title    */
+    nav .nav_title{
+        width:60%;
+    }
+}
+@media only screen and (min-width:425px) and (max-width:707px){
+     /* nav title    */
+    nav .nav_title{
+        width:65%;
+    }
+}
+@media only screen and (min-width:425px) and (max-width:593px){
+     /* nav title    */
+    nav .nav_title{
+        width:75%;
+    }
+}
+@media only screen and (min-width:425px) and (max-width:523px){
+     /* nav title    */
+    nav .nav_title{
+        width:80%;
+    }
+}
+@media only screen and (min-width:200px) and (max-width:500px){
+    /* navigation bar */
+    nav{
+        padding: 10px 20px;
+    }
+     /* menu bar */
+    nav .fa-bars{
+        font-size: 20px;
+        position: absolute;
+        top:10px;
+        right:20px;
+        border: 2px solid var(--txt-color);
+        color: var(--txt-color);
+        padding: 7px;
+        z-index: 10;
+    }
+    nav .logo i{
+        font-size: 20px;
+    }
+    nav .logo h1{
+        font-size: 20px;
+    } 
+    /* sign up button */
+    nav>button{
+        padding: 5px 10px;
+        font-size:15px;
+        margin-right: 50px;
+    }
+     /* nav title    */
+    nav .nav_title{
+        width:100%;
+        padding:100px 30px 30px 30px;
+    }
+    nav .nav_title a{
+        font-size: 16px;
+    }
+    /* discard logo hiding */
+    nav>#lbl:checked ~.nav_title{
+        top:-20px;
+    }
+}
+/* logo moving */
+@media only screen and (min-width:768px) and (max-width:1024px){
+    nav:has(input:nth-child(3):checked) .logo{
+        transform: translateX(390%);
+    }
+}
+@media only screen and (min-width:425px) and (max-width:768px){
+    nav:has(input:nth-child(3):checked) .logo{
+        transform: translateX(210%);
+    }
+}
+@media only screen and (min-width:200px) and (max-width:425px){
+    nav:has(input:nth-child(3):checked) .logo{
+        transform: translateX(0%);
+    }
+}
+@media only screen and (min-width:501px) and (max-width:1024px){
+  /* logo */
+  nav .logo{
+    position: relative;
+    left:-40px;
+}
+}
+section{
+    margin-top:85px;
+}
+/* ---------------------------------------------------fOOter------------------------------------- */
+footer{
+    position:relative;
+    bottom:0;
+    left:0;
+    background-color: #11235A;
+    width: 100%;
+    padding:50px 20px;
+}
+/* language select */
+footer .col1>.select{
+    position:relative;
+    display: inline-block;
+}
+footer .col1>.select select{
+    outline:none;
+    background-color: #11235A;
+    color:var(--txt-color);
+    border: none;
+    padding:10px 20px;
+    font-size:16px;
+}
+footer .col1>.select select option{
+    background-color: white;
+    color: #11235A;
+    font-weight:550;
+}
+/* chevron Icon */
+footer .col1>.select i{
+    background-color:#11235A;
+    color: var(--txt-color);
+    position: absolute;
+    border: none;
+    pointer-events: none;
+    right:5px;
+    height:100%;
+    width:25px;
+    font-size:16px;
+    padding-top:16px;
+}
+/* social media icon */
+footer .col1>.icon i{
+    font-size: 25px;
+    padding-left:10px;
+    padding-top: 30px;
+    transition: all 1s cubic-bezier(.17,.67,.83,.67);
+}
+footer .col1>.icon i:hover{
+     transform:scale(1.3); 
+}
+/* footer titles */
+footer>.row1{
+    display: flex;
+    gap:20px;
+}
+footer>.row1 .col1{
+    width:300px;
+}
+footer>.row1 .col2{
+    width:100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+}
+footer{
+    color:var(--txt-color);
+}
+/* heading */
+footer .col2 h3{
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size:21px;
+}
+/* links */
+footer .col2 p{
+    font-size: 16px;
+}
+footer .col2 p,footer .col2 h3{
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: underline 1.5px transparent;
+    transition: all 0.5s;
+}
+footer .col2 p:hover , footer .col2 h3:hover{
+    text-decoration: underline 1.5px white;
+}
+footer .col2 p:hover{
+    transform:translateX(7px);
+}
+@media only screen and (min-width:200px) and (max-width:500px){
+    footer{
+        margin-top:57px;
+    }
+}
+@media only screen and (min-width:200px) and (max-width:950px){
+    footer>.row1{
+        flex-direction: column;        
+    }
+    footer>.row1 .col2{
+        gap:30px;
+        padding: 30px;
+    }   
+}
