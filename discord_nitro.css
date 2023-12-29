@@ -1,5 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*---------------------------------------------------------------- introduction */
+section>.intro{
+    margin-top:85px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 50px 0;
+    gap:50px;
+}
+/* heading */
+section>.intro>.txt h1{
+    font-size:60px;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing:-3px;
+    padding-bottom:20px;
+}
+/* paragraph */
+section>.intro>.txt p{
+    font-size: 20px;
+}
+/* ship */
+section>.intro>.ship{
+    width:500px;
+    height:380px;
+    /* background-color: burlywood; */
+    animation-name: ship;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    position:relative;
+    z-index: -1;
+}
+section>.intro>.ship img[alt~="Prometheous"]{
+    width:100%;
+    height:100%;
+}
+@keyframes ship{
+	0%{
+        transform: translateX(0px);
+        transform: scale(1.2);
+    }
+    20%{
+        transform: translateY(40px);
+    }
+    40%{
+        transform: translateY(60px);
+        transform: scale(1.2);
+    }
+    60%{
+        transform: translateX(-60px);
+    }
+    80%{
+        transform: translateX(80px);
+        transform: scale(1.1);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
+@media only screen and (min-width:1050px) and (max-width:1150px){
+/* ship */
+section>.intro>.ship{
+    width:360px;
+    height:280px;
+}
+}
+@media only screen and (min-width:200px) and (max-width:1050px){
+/* ship */
+section>.intro>.ship{
+    width:320px;
+    height:180px;
+    padding-right: 30px;
+}
+/* heading */
+section>.intro>.txt h1{
+    font-size:40px;
+    line-height:36px;
+    letter-spacing:2px;
+    padding-bottom:10px;
+}
+}
+
+/*introduction------------------------------------------------------------- */
+@media (max-width:950px){
+    section>.intro{
+        flex-direction: column;
+        padding: 50px 0px;
+        height: fit-content;
+    }
+}
+@media only screen and (min-width:200px) and (max-width:530px){
+section>.intro{
+    padding:20px 30px 50px;
+}
+/* ship */
+section>.intro>.ship{
+    width:250px;
+    height:130px;
+    padding-right: 30px;
+}
+/* heading */
+section>.intro>.txt h1{
+    font-size:40px;
+    line-height:36px;
+    letter-spacing:2px;
+    padding-bottom:10px;
+    text-align:justify;
+}
+section>.intro>.txt p{
+    font-size: 16px;
+}
+@keyframes ship{
+	0%{
+        transform: translateX(0px);
+        transform: scale(1.2);
+    }
+    20%{
+        transform: translateY(40px);
+    }
+    40%{
+        transform: translateY(60px);
+        transform: scale(1.2);
+    }
+    60%{
+        transform: translateX(-30px);
+    }
+    80%{
+        transform: translateX(80px);
+        transform: scale(1.1);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
 }
