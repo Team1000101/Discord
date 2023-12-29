@@ -1,8 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+}
+
+/* root */
+:root{
+    --text-color:white;
+}
+.main-look{
+    width: 100%;
+}
+.laptop{
+    background-color:#332C39;
+    height: 85vh;
+    color: var(--text-color);
+    padding:300px 150px 200px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-lap{
+    width: 50%;
+    line-height: 40px;  
+}
+.text-lap h1{
+    font-size: 60px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 65px;
+}
+.text-lap p{
+    padding: 30px 0px;
+    line-height: 30px;  
+}
+.win p{
+    display: inline;
+}
+.win :nth-child(1){
+    padding: 15px 20px;
+    font-size: 17px;
+    background-color: #3559E0;
+    border-radius: 30px;
+}
+.win :nth-child(2){
+    padding: 0px 50px;
+}
+.fa-download{
+    font-size: 20px;
+  
+}
+.pic-lap{
+    width: 50%;
+    padding: 50px;
+}
+.pic-lap img{
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
 }
