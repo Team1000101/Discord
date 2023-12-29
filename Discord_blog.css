@@ -315,15 +315,15 @@
     border-radius:5px ;
 }
         /* ----------responsive-------- */
-@media screen and (max-width:800px) {
+@media screen and (max-width:500px) {
     .boxes{
         flex-direction: column;
         width:100% ;
-        height: max-content;
+        height:fit-content;
     }
     .container1{
         padding-left:20px ;
-        height:fit-content;
+        min-height: fit-content;
     }
     .head{
         padding-left: 0;
@@ -333,7 +333,7 @@
     .box1{
         width:100%;
         padding-top: 0;
-        height:fit-content;
+        height:max-content;
     }
     .box1 h3{
         font-size: 20px;
@@ -346,13 +346,13 @@
     }
     .box2{
         width:100%;
-        height: fit-content;
+        height: fit-content;    
     }
     .box2 h3{
         font-size: 20px;
     }
     .discard{
-        font-size: 25px;
+        font-size: 20px;
         padding-bottom:10px ;
     }
     .header1{
@@ -360,7 +360,71 @@
         line-height:30px ;
     }
          /* ------------boxes-1 --------------- */
-    
+    .boxes-1{
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+    }
+    .box3{
+        width: 100%;
+    }
+    .box3 h3{
+         font-size: 20px;
+    }
+    .box4{
+        width: 100%;
+    }
+    .box4 h3{
+         font-size: 20px;
+    }
+    .box5{
+        width: 100%;
+    }
+    .box5 h3{
+         font-size: 20px;
+    }
+    .img-4{
+        height: 150px;
+    }
+    .img-5{
+        height: 150px;
+    }
+    .img-6{
+        height: 150px;
+    }
+             /* ----------------boxes-2 ---------------- */
+    .boxes-2{
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+    }
+    .box6{
+        width: 100%;
+    }
+    .box6 h3{
+         font-size: 20px;
+    }
+    .box7{
+        width: 100%;
+    }
+    .box7 h3{
+         font-size: 20px;
+    }
+    .box8{
+        width: 100%;
+    }
+    .box8 h3{
+         font-size: 20px;
+    }
+    .img-7{
+        height: 150px;
+    }
+    .img-8{
+        height: 150px;
+    }
+    .img-9{
+        height: 150px;
+    }
 }
 /* ----------------------------------------- container1 end------------------------------------------------ */
 .container2{
