@@ -6,92 +6,126 @@
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    background-image: linear-gradient(#0067e0 70%, white 30%) ;
-    height: 100vh;
+    background-image: linear-gradient(#0067e0 70%,white 30%) ;
+    max-height: 100vh;
     width:100% ;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    justify-content:center;
+    align-items:center;
+    padding-top: 50px;
 }
-.container .img-1{
+
+/*------------- img-1 ------- */ 
+.img-1{
     width:90%;
-    height: 90vh;
-    object-fit:cover;
-    border-radius: 5px; 
-    position: absolute; 
-    top: 50px; 
+    height: 80vh;
+    object-fit:contain;
+    border-radius: 10px;   
+}
+/* ---------------responsive-------- */
+@media screen and (max-width:800px) {
+    .container .img-1{
+        width:80%;
+        object-fit: contain;
+        height: 100vh;
+        border-radius: 5px;
+    }
+    .container{
+        height:70vh;
+    }
 }
 /* ------------------------------------- container end--------------------------------------------------------- */
 .container1{
-    min-height: 100vh;
-    width: auto;
-    padding:25px 45px;
+    height: 120vh;
+    width: 100%;
+    padding:25px ;
 }
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    padding-left: 40px;
+}
+             /*---h4 discard--- */
 .discard{
     font-family: 'Kanit', sans-serif;
     color: blue;
     line-height: 20px;
 }
+           /* ----header---- */
 .header1{
     font-family: 'Kanit', sans-serif;
-    line-height:35px;
-    font-size: 40px; 
+    line-height:45px;
+    font-size: 45px; 
 }
+                 /*-- header-hover-- */
 .header1:hover{
     cursor: pointer;
     color: blue;
 }
+         /* ---boxes----- */
 .boxes{
-    padding-top:50px ;
     display: flex;
-    justify-content: start;
-    align-items:start;
+    width: 100%;
+    height:380px ;
+    align-items: center;
+    justify-content: center;
     gap:20px;
 }
-.box1{ height:270px ;
-       width:400px;
+   /* ----img-box1-- */
+.box1{ height:320px ;
+       width:600px;
 }
+      /* ----box-1 p tag--- */
 .box1 p{
-    font-family: 'Kanit', sans-serif;
     color: blue;
-    font-size:12px ;
+    font-size:15px ;
     line-height:25px;
-}.box1 h3{ font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+}
+     /* ---h3---tag-- */
+.box1 h3{ 
+    font-size: 25px;
+    line-height: 25px;
    }
+     /* -----h3 hover--- */
 .box1 h3:hover{
     color: blue;
     cursor: pointer;
 }
-
-.box2{height:270px ;
-    width:400px;}
+     /* ----img-box2--- */
+.box2{height:320px ;
+    width:600px;
+}
+     /* -----box2 p-Tag--- */
 .box2 p{
-    font-family: 'Kanit', sans-serif;
     color:blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
 }
+    /* ----box2 h3 tag--- */
 .box2 h3{
-    font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+       /* ----h3 hover in box2 */
 .box2 h3:hover{
     color: blue;
     cursor: pointer;
 }
-
+     /* ----img-2- in box1---- */
 .img-2{
-    height:180px;
-    width:400px;
+    height:80%;
+    width:100%;
     border-radius:5px ;
 }
+     /* ----img-3- in box2---- */
 .img-3{
-    height:180px;
-    width:400px;
+    height:80%;
+    width:100%;
     border-radius:5px ;
 }
+     /* --------next div boxes-1----- */
 .boxes-1{
     height: 300px;
     width: 100%;
@@ -99,72 +133,93 @@
     justify-content: center;
     align-items: center;
     gap:20px;
+    padding-top: 10px;
 }
-.box3{ height:250px ;
-    width:260px;
+      /* -------box3------------ */
+.box3{ height:100% ;
+    width:33%;
 }
-.box4{ height:250px ;
-    width:260px;
+       /* -------box4------------ */
+.box4{ height:100% ;
+    width:33%;
 }
-.box5{height:250px ;
- width:260px;}
+        /* -------box5------------ */
+.box5{height:100% ;
+ width:33%;
+}
+       /* -------box3 -p -Tag */
 .box3 p{
-    font-family: 'Kanit', sans-serif;
     color: blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
+    padding-top: 5px;
 }
+       /* -------box4 -p -Tag */
 .box4 p{
- font-family: 'Kanit', sans-serif;
  color:blue;
  line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
+    padding-top: 5px;
 }
+       /* -------box4 -p -Tag */
 .box5 p{
-    font-family: 'Kanit', sans-serif;
     color:blue;
+    padding-top: 5px;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
    }
+     /* ------box3 h3-Tag------- */
 .box3 h3{
     font-family: 'Kanit', sans-serif;  
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 26px;
 }
+     /* ------box4 h3-Tag------- */
 .box4 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 26px;
 }
+     /* ------box5 h3-Tag------- */
 .box5 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 26px;
 }
+      /* -------h3 hover---- */
 .box3 h3:hover{
     color: blue;
     cursor: pointer;
 }
+      /* -------h3 hover---- */
 .box4 h3:hover{
  color: blue;
  cursor: pointer;
 }
+      /* -------h3 hover---- */
 .box5 h3:hover{
     color: blue;
     cursor: pointer;
   }
+      /* -----box3 img-4------- */
 .img-4{
- height:150px;
- width:260px;
+ height:65%;
+ width:100%;
  border-radius:5px ;
 }
+      /* -----box4 img-5------- */
 .img-5{
- height:150px;
- width:260px;
+ height:65%;
+ width:100%;
  border-radius:5px ;
 }
+      /* -----box5 img-6------- */
 .img-6{
-    height:150px;
-    width:260px;
+    height:65%;
+    width:100%;
     border-radius:5px ;
 }
+      /* ---container1  boxes-2 ------ */
 .boxes-2{
     height: 300px;
     width: 100%;
@@ -172,71 +227,140 @@
     justify-content: center;
     align-items: center;
     gap:20px;
+    padding-top: 10px;
 }
-.box6{ height:250px ;
-    width:260px;
+      /* --------boxes-2 box6----- */
+.box6{
+     height:100% ;
+    width:33%;
 }
-.box7{ height:250px ;
-    width:260px;
+      /* --------boxes-2 box7----- */
+.box7{ height:100% ;
+    width:33%;
 }
-.box8{height:250px ;
- width:260px;}
+      /* --------boxes-2 box8----- */
+.box8{height:100% ;
+ width:33%;
+}
+     /* -------box6 p-Tag----- */
 .box6 p{
     font-family: 'Kanit', sans-serif;
     color: blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
 }
+     /* -------box7 p-Tag----- */
 .box7 p{
- font-family: 'Kanit', sans-serif;
- color:blue;
- line-height:25px;
-    font-size:12px ;
+    font-family: 'Kanit', sans-serif;
+    color:blue;
+    line-height:25px;
+    font-size:15px ;
 }
+     /* -------box8  p-Tag----- */
 .box8 p{
     font-family: 'Kanit', sans-serif;
     color:blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
    }
+     /* box6    h3-tag------ */
 .box6 h3{
     font-family: 'Kanit', sans-serif;  
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+      /* box7    h3-tag------ */
 .box7 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+      /* box8    h3-tag------ */
 .box8 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+       /* ----h3 hover--- */
 .box6 h3:hover{
     color: blue;
     cursor: pointer;
 }
+       /* ----h3 hover--- */
 .box7 h3:hover{
  color: blue;
  cursor: pointer;
 }
+       /* ----h3 hover--- */
 .box8 h3:hover{
     color: blue;
     cursor: pointer;
   }
+        /* ----box6  --img-7----- */
 .img-7{
- height:150px;
- width:260px;
+ height:70%;
+ width:100%;
  border-radius:5px ;
 }
+       /* ----box7  --img-8----- */
 .img-8{
- height:150px;
- width:260px;
+ height:70%;
+ width:100%;
  border-radius:5px ;
 }
+       /* ----box8  --img-9----- */
 .img-9{
-    height:150px;
-    width:260px;
+    height:70%;
+    width:100%;
     border-radius:5px ;
+}
+        /* ----------responsive-------- */
+@media screen and (max-width:800px) {
+    .boxes{
+        flex-direction: column;
+        width:100% ;
+        height: max-content;
+    }
+    .container1{
+        padding-left:20px ;
+        height:fit-content;
+    }
+    .head{
+        padding-left: 0;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    .box1{
+        width:100%;
+        padding-top: 0;
+        height:fit-content;
+    }
+    .box1 h3{
+        font-size: 20px;
+    }
+    .img2{
+        width: 100%;
+    }
+    .img3{
+        width: 100%;
+    }
+    .box2{
+        width:100%;
+        height: fit-content;
+    }
+    .box2 h3{
+        font-size: 20px;
+    }
+    .discard{
+        font-size: 25px;
+        padding-bottom:10px ;
+    }
+    .header1{
+        font-size: 30px;
+        line-height:30px ;
+    }
+         /* ------------boxes-1 --------------- */
+    
 }
 /* ----------------------------------------- container1 end------------------------------------------------ */
 .container2{
