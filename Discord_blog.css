@@ -6,92 +6,127 @@
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    background-image: linear-gradient(#0067e0 70%, white 30%) ;
-    height: 100vh;
+    background-image: linear-gradient(#0067e0 70%,white 30%) ;
+    max-height: 100vh;
     width:100% ;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    justify-content:center;
+    align-items:center;
+    padding-top: 50px;
 }
-.container .img-1{
+
+/*------------- img-1 ------- */ 
+.img-1{
     width:90%;
-    height: 90vh;
-    object-fit:cover;
-    border-radius: 5px; 
-    position: absolute; 
-    top: 50px; 
+    height: 80vh;
+    object-fit:contain;
+    border-radius: 10px;   
+}
+/* ---------------responsive-------- */
+@media screen and (max-width:800px) {
+    .container .img-1{
+        width:80%;
+        object-fit: contain;
+        height: 100vh;
+        border-radius: 5px;
+    }
+    .container{
+        height:70vh;
+    }
 }
 /* ------------------------------------- container end--------------------------------------------------------- */
 .container1{
-    min-height: 100vh;
-    width: auto;
-    padding:25px 45px;
+    height: 120vh;
+    width: 100%;
+    padding:25px ;
 }
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    padding-left: 40px;
+}
+             /*---h4 discard--- */
 .discard{
     font-family: 'Kanit', sans-serif;
     color: blue;
     line-height: 20px;
 }
+           /* ----header---- */
 .header1{
     font-family: 'Kanit', sans-serif;
-    line-height:35px;
-    font-size: 40px; 
+    line-height:45px;
+    font-size: 45px; 
 }
+                 /*-- header-hover-- */
 .header1:hover{
     cursor: pointer;
     color: blue;
 }
+         /* ---boxes----- */
 .boxes{
-    padding-top:50px ;
     display: flex;
-    justify-content: start;
-    align-items:start;
+    width: 100%;
+    margin-bottom: 30px;
+    height:380px ;
+    align-items: center;
+    justify-content: center;
     gap:20px;
 }
-.box1{ height:270px ;
-       width:400px;
+   /* ----img-box1-- */
+.box1{ height:320px ;
+       width:600px;
 }
+      /* ----box-1 p tag--- */
 .box1 p{
-    font-family: 'Kanit', sans-serif;
     color: blue;
-    font-size:12px ;
+    font-size:15px ;
     line-height:25px;
-}.box1 h3{ font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+}
+     /* ---h3---tag-- */
+.box1 h3{ 
+    font-size: 25px;
+    line-height: 25px;
    }
+     /* -----h3 hover--- */
 .box1 h3:hover{
     color: blue;
     cursor: pointer;
 }
-
-.box2{height:270px ;
-    width:400px;}
+     /* ----img-box2--- */
+.box2{height:320px ;
+    width:600px;
+}
+     /* -----box2 p-Tag--- */
 .box2 p{
-    font-family: 'Kanit', sans-serif;
     color:blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
 }
+    /* ----box2 h3 tag--- */
 .box2 h3{
-    font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+       /* ----h3 hover in box2 */
 .box2 h3:hover{
     color: blue;
     cursor: pointer;
 }
-
+     /* ----img-2- in box1---- */
 .img-2{
-    height:180px;
-    width:400px;
+    height:80%;
+    width:100%;
     border-radius:5px ;
 }
+     /* ----img-3- in box2---- */
 .img-3{
-    height:180px;
-    width:400px;
+    height:80%;
+    width:100%;
     border-radius:5px ;
 }
+     /* --------next div boxes-1----- */
 .boxes-1{
     height: 300px;
     width: 100%;
@@ -99,151 +134,479 @@
     justify-content: center;
     align-items: center;
     gap:20px;
+    padding-top: 10px;
+    margin-bottom: 30px;
 }
-.box3{ height:250px ;
-    width:260px;
+      /* -------box3------------ */
+.box3{ height:100% ;
+    width:33%;
 }
-.box4{ height:250px ;
-    width:260px;
+       /* -------box4------------ */
+.box4{ height:100% ;
+    width:33%;
 }
-.box5{height:250px ;
- width:260px;}
+        /* -------box5------------ */
+.box5{height:100% ;
+ width:33%;
+}
+       /* -------box3 -p -Tag */
 .box3 p{
-    font-family: 'Kanit', sans-serif;
     color: blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
+    padding-top: 5px;
 }
+       /* -------box4 -p -Tag */
 .box4 p{
- font-family: 'Kanit', sans-serif;
  color:blue;
  line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
+    padding-top: 5px;
 }
+       /* -------box4 -p -Tag */
 .box5 p{
-    font-family: 'Kanit', sans-serif;
     color:blue;
+    padding-top: 5px;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
    }
+     /* ------box3 h3-Tag------- */
 .box3 h3{
     font-family: 'Kanit', sans-serif;  
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 26px;
 }
+     /* ------box4 h3-Tag------- */
 .box4 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 26px;
 }
+     /* ------box5 h3-Tag------- */
 .box5 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 26px;
 }
+      /* -------h3 hover---- */
 .box3 h3:hover{
     color: blue;
     cursor: pointer;
 }
+      /* -------h3 hover---- */
 .box4 h3:hover{
  color: blue;
  cursor: pointer;
 }
+      /* -------h3 hover---- */
 .box5 h3:hover{
     color: blue;
     cursor: pointer;
   }
+      /* -----box3 img-4------- */
 .img-4{
- height:150px;
- width:260px;
+ height:65%;
+ width:100%;
  border-radius:5px ;
 }
+      /* -----box4 img-5------- */
 .img-5{
- height:150px;
- width:260px;
+ height:65%;
+ width:100%;
  border-radius:5px ;
 }
+      /* -----box5 img-6------- */
 .img-6{
-    height:150px;
-    width:260px;
+    height:65%;
+    width:100%;
     border-radius:5px ;
 }
+      /* ---container1  boxes-2 ------ */
 .boxes-2{
     height: 300px;
+    margin-bottom:50px ;
     width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
     gap:20px;
+    padding-top: 10px;
 }
-.box6{ height:250px ;
-    width:260px;
+      /* --------boxes-2 box6----- */
+.box6{
+     height:100% ;
+    width:33%;
 }
-.box7{ height:250px ;
-    width:260px;
+      /* --------boxes-2 box7----- */
+.box7{ height:100% ;
+    width:33%;
 }
-.box8{height:250px ;
- width:260px;}
+      /* --------boxes-2 box8----- */
+.box8{height:100% ;
+ width:33%;
+}
+     /* -------box6 p-Tag----- */
 .box6 p{
     font-family: 'Kanit', sans-serif;
     color: blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
 }
+     /* -------box7 p-Tag----- */
 .box7 p{
- font-family: 'Kanit', sans-serif;
- color:blue;
- line-height:25px;
-    font-size:12px ;
+    font-family: 'Kanit', sans-serif;
+    color:blue;
+    line-height:25px;
+    font-size:15px ;
 }
+     /* -------box8  p-Tag----- */
 .box8 p{
     font-family: 'Kanit', sans-serif;
     color:blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
    }
+     /* box6    h3-tag------ */
 .box6 h3{
     font-family: 'Kanit', sans-serif;  
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+      /* box7    h3-tag------ */
 .box7 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+      /* box8    h3-tag------ */
 .box8 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+       /* ----h3 hover--- */
 .box6 h3:hover{
     color: blue;
     cursor: pointer;
 }
+       /* ----h3 hover--- */
 .box7 h3:hover{
  color: blue;
  cursor: pointer;
 }
+       /* ----h3 hover--- */
 .box8 h3:hover{
     color: blue;
     cursor: pointer;
   }
+        /* ----box6  --img-7----- */
 .img-7{
- height:150px;
- width:260px;
+ height:70%;
+ width:100%;
  border-radius:5px ;
 }
+       /* ----box7  --img-8----- */
 .img-8{
- height:150px;
- width:260px;
+ height:70%;
+ width:100%;
  border-radius:5px ;
 }
+       /* ----box8  --img-9----- */
 .img-9{
-    height:150px;
-    width:260px;
+    height:70%;
+    width:100%;
     border-radius:5px ;
 }
-/* ----------------------------------------- container1 end------------------------------------------------ */
-.container2{
-    height: 120vh;
-    width: 100%;
-
+        /* ----------responsive-------- */
+@media screen and (max-width:550px) {
+    .boxes{
+        flex-direction: column;
+        width:100% ;
+        height:fit-content;
+        margin-bottom:10px;
+    }
+    .container1{
+        padding-left:20px ;
+        min-height: fit-content;
+    }
+    .head{
+        padding-left: 0;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    .box1{
+        width:100%;
+        padding-top: 0;
+        height:300px;
+    }
+    .box1 h3{
+        font-size: 20px;
+    }
+    .img-2{
+        width: 100%;
+        height:65% ;
+    }
+    .img-3{
+        width: 100%;
+        height:65% ;
+    }
+    .box2{
+        width:100%;
+        height: 300px;    
+    }
+    .box2 h3{
+        font-size: 20px;
+    }
+    .discard{
+        font-size: 20px;
+        padding-bottom:10px ;
+    }
+    .header1{
+        font-size: 30px;
+        line-height:30px ;
+    }
+         /* ------------boxes-1 --------------- */
+    .boxes-1{
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .box3{
+        width: 100%;
+    }
+    .box3 h3{
+         font-size: 20px;
+    }
+    .box4{
+        width: 100%;
+    }
+    .box4 h3{
+         font-size: 20px;
+    }
+    .box5{
+        width: 100%;
+    }
+    .box5 h3{
+         font-size: 20px;
+    }
+    .img-4{
+        height: 150px;
+    }
+    .img-5{
+        height: 150px;
+    }
+    .img-6{
+        height: 150px;
+    }
+             /* ----------------boxes-2 ---------------- */
+    .boxes-2{
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+        margin-bottom:10px;
+    }
+    .box6{
+        width: 100%;
+    }
+    .box6 h3{
+         font-size: 20px;
+    }
+    .box7{
+        width: 100%;
+    }
+    .box7 h3{
+         font-size: 20px;
+    }
+    .box8{
+        width: 100%;
+    }
+    .box8 h3{
+         font-size: 20px;
+    }
+    .img-7{
+        height: 150px;
+    }
+    .img-8{
+        height: 150px;
+    }
+    .img-9{
+        height: 150px;
+    }
 }
+                              /*-------- responsive 500px to 1000px----------- */
+@media screen and (min-width:551px) and (max-width:1000px) {
+.boxes{
+        width:100% ;
+        height:fit-content;
+    }
+    .container1{
+        padding-left:20px ;
+        min-height: fit-content;
+    }
+    .head{
+        padding-left: 0;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    .box1{
+        width:100%;
+        padding-top: 0;
+        height:300px;
+    }
+    .box1 h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .img-2{
+        width:100%;
+        height: 65%;
+    }
+    .img-3{
+        width:100%;
+        height: 65%;
+    }
+    .box2{
+        width:100%;
+        height:300px;    
+    }
+    .box2 h3{
+        font-size: 22px;
+        line-height:20px ;
+    }
+    .discard{
+        font-size: 23px;
+        padding-bottom:10px ;
+    }
+    .header1{
+        font-size: 32px;
+        line-height:30px ;
+    }
+                    /* -----------boxes-1--------------- */
+    .boxes-1{
+        height:400px;
+        width: 100%;
+        margin-bottom: 10px ;
+    }
+    .box3{
+        width: 100%;
+        height:400px;
+    }
+    .box3 h3{
+         font-size: 25px;
+    }
+    .box4{
+        width: 100%;
+        height:400px;
+    }
+    .box4 h3{
+         font-size: 25px;
+    }
+    .box5{
+        width: 100%;
+        height:400px;
+    }
+    .box5 h3{
+         font-size: 25px;
+    }
+    .img-4{
+        height:200px;
+    }
+    .img-5{
+        height:200px;
+    }
+    .img-6{
+        height:200px;
+    }  
+                       /* -----------boxes-1--------------- */
+    .boxes-1{
+        height:400px;
+        width: 100%;
+        margin-bottom: 10px ;
+    }
+    .boxes-1 p{
+        line-height:15px ;
+        margin-bottom: 10px;
+    }
+    .box3{
+        width: 100%;
+        height:400px;
+    }
+    .box3 h3{
+         font-size: 25px;
+    }
+    .box4{
+        width: 100%;
+        height:400px;
+    }
+    .box4 h3{
+         font-size: 25px;
+    }
+    .box5{
+        width: 100%;
+        height:400px;
+    }
+    .box5 h3{
+         font-size: 25px;
+    }
+    .img-4{
+        height:200px;
+    }
+    .img-5{
+        height:200px;
+    }
+    .img-6{
+        height:200px;
+    }
+              /* --------boxes-2----------- */
+    .boxes-2{
+        height:400px;
+        width: 100%;
+        margin-bottom: 10px ;
+    }
+    .boxes-2 p{
+        line-height:15px ;
+        margin-bottom: 10px;
+    }
+    .box6{
+        width: 100%;
+        height:400px;
+    }
+    .box6 h3{
+         font-size: 25px;
+    }
+    .box7{
+        width: 100%;
+        height:400px;
+    }
+    .box7 h3{
+         font-size: 25px;
+    }
+    .box8{
+        width: 100%;
+        height:400px;
+    }
+    .box8 h3{
+         font-size: 25px;
+    }
+    .img-7{
+        height:200px;
+    }
+    .img-8{
+        height:200px;
+    }
+    .img-9{
+        height:200px;
+    }  
+    
+}
+/* ----------------------------------------- container1 end------------------------------------------------ */
+                  /* -----------container2------------ */
+.container2{
+    height: 100vh;
+    width: 100%;
+}
+                   /* --------boxes-3------------------ */
 .boxes-3{
     height: 100%;
     width: 100%;
@@ -252,117 +615,156 @@
     border-radius:10px ;
     padding: 20px;
 }
+                   /* ----------------box9-------------- */
 .boxes-3 .box9{
     width:40% ;
     height: 100%;
     padding: 20px;
 }
+                          /* -------p Tag in box9---------- */
 .box9 p{
-    font-family: 'Kanit', sans-serif;
     line-height: 30px;
 }
+                           /* -------h2 Tag in box9---------- */
 .box9 h2{
-    font-family: 'Kanit', sans-serif;
-    line-height:30px ;
+    line-height:37px ;
     padding-bottom: 15px;
     font-size: 40px;
     color:blue;
 }
+                           /* -------------img-10--------------- */
 .img-10{
-    height: 130px;
-    width: 80%;
+    height: 250px;
+    width: 90%;
     border-radius: 10px;
 }
+                 /*  -------h6 Tag in box9------- */
 .box9 h6{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
-    width: 100%;
+    font-size: 20px;
+    line-height:25px ;
+    width: 90%;
     padding-top: 10px;
     padding-bottom: 20px;
 }
+                     /* ---------------button----------- */
 .box9 button{
-    font-family: 'Kanit', sans-serif;
     background-color: #0067e0;
     border:none;
     color: white;
-    border-radius: 20px;
-    width: auto;
-    padding: 10px;
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bolder;
 }
-
+                    /* ---------------boxes-3 box10----------- */
 .boxes-3 .box10{
     width:65% ;
     height: 100%;
 }
+                    /* --------------box11---------------- */
 .box11{
     height: 55%;
 }
+                   /* --------------img-11 in boxes-3--------- */
 .img-11{
     width: 100%;
     height: 80%;
     border-radius: 5px;
-}
+} 
+                   /* -----------------p-Tag in box11---------- */
 .box11 p{
-    font-family: 'Kanit', sans-serif;
-    padding-top: 10px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
+                    /* --------------------box11 p Tag hover---- */
 .box11 p:hover{
     color: #0067e0;
 }
+                    /* ----------------box12------------------- */
 .box12{
     height: 45%;
     display: flex;
     gap:5px;
 }
+                               /* ---------box-13   --------------- */
 .box-13{
     width: 33%;
-    
+    height: 250px;    
 }
+                          /* ------p Tag in Box-13---------------- */
 .box-13 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 20px;
     padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                   /* ---------------p Tag hover---------- */
 .box-13 p:hover{
     color: #0067e0;
 }
+                          /* -------------img-12------------ */
 .img-12{
     width: 100%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
 }
+                   /* ---------------box-14------------ */
 .box-14{
     width: 33%;
-}
+    height: 250px;
+} 
+                      /*---------p---Tag in box-14------------- */
 .box-14 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 20px;
     padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                    /* -----------p tag  hover------ */
 .box-14 p:hover{
     color: #0067e0;
 }
+                  /* -----------------img-13------------ */
 .img-13{
     width: 100%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
 }
+                   /* --------------box-15-------------- */
 .box-15{
     width: 33%;
+    height:250px ;
 }
+                  /* ----p Tag in box-15---------------- */
 .box-15 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 20px;
     padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                /* ------------p Tag hover------------- */
 .box-15 p:hover{
     color: #0067e0;
 }
+                /* ----------------img-14---------------- */
 .img-14{
     width: 100%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
 }
+                      /* ---______________RESPONSIVE___________*/
+@media screen and (max-width:550px) {
+    .boxes-3{
+        flex-direction: column;
+    }
+    
+}
+
 /* ----------------------------------------------container2 end------------------------- */
 .container3{
     height: 140vh;
