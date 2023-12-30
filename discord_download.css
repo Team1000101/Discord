@@ -13,6 +13,7 @@
 /* root */
 :root{
     --text-color:white;
+    --cursor:pointer;
 }
 .main-look{
     width: 100%;
@@ -59,7 +60,7 @@
 }
 .top-icon:hover{
     background-color: #5fbdff;
-    cursor: pointer;
+    cursor: var(--cursor);
 }
 .pic-lap{
     width: 50%;
@@ -73,4 +74,22 @@
 /* other-downloads */
 .other-down{
     padding: 250px 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    gap: 50px;
+}
+.spacing{
+    width: 100%;
+    padding:150px ;
+    background-color: white;
+}
+.bag{
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
