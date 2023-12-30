@@ -5,7 +5,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --txt_white:white;
+}
 /*---------------------------------------------------------------- introduction */
+/* flex-properties */
+.nitro_detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 section>.intro{
     margin-top:85px;
     display: flex;
@@ -140,4 +149,95 @@ section>.intro>.txt p{
         transform: translateX(50px);
     }
 }
+}
+/* ----------------------------------nitro_details */
+.nitro_detail{
+ padding:50px;
+ gap:30px;
+ align-items:stretch;   
+}
+/* heading */
+.nitro_detail>div>h1{
+    font-size:40px;
+    transition: all 0.5s;
+}
+.nitro_detail>div:hover h1{
+    transform:translateX(20px);
+}
+/* icons */
+.nitro_detail>div i{
+    font-size:22px;
+    transition: all 0.5s;
+}
+/* paragraph */
+.nitro_detail>div>div p{
+    font-size:22px;
+    transition: all 0.5s;
+}
+.nitro_detail>div:hover >div p{
+    transform: translateX(10px);
+}
+.nitro_detail>div:has(p:nth-child(2):hover) i:nth-child(1){
+    transform: scale(1.1);
+    background-color: white;
+    padding:5px;
+    border-radius: 50%;
+}
+.nitro_detail>.basic:has(p:nth-child(2):hover) i:nth-child(1){
+    color:#0093E9;
+}
+.nitro_detail>.nitro:has(p:nth-child(2):hover) i:nth-child(1){
+    color:#C850C0 ;
+}
+.nitro_detail>.basic{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    width: 50%;
+    position: relative;
+}
+.nitro_detail>.nitro{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    width: 50%;
+}
+/* main */
+.nitro_detail>div{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    border-radius: 10px;
+    color: var(--txt_white);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.nitro_detail>div>div{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.nitro_detail>div>p{
+    width:100%;
+    padding: 10px 0;
+    font-size:22px;
+    border-radius: 30px;
+    border:2px solid white;
+    background-color: white;
+    color:black;
+    text-align: center;
+    transition: all 0.5s;
+}
+.nitro_detail>div:hover >p{
+    color: #C850C0;
+    transform: translateY(-10px);
+}
+/* button */
+.nitro_detail>.basic>p{
+    position: absolute;
+    bottom:15px;
+    left:15px;
+    color:black;
+    width: calc(100% - 30px);
+}
+.nitro_detail>.basic:hover >p{
+    color:#0093E9;
 }
