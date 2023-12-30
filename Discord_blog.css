@@ -1276,7 +1276,183 @@
     border-radius: 5px;
 }
                     /* ---------------------img-24---------------- */
+                 
 .img-24{
+    width:100%;
+    height:70%;
+    border-radius: 5px;
+}
+                           /* -----container4 end----------- */
+          /* ________________________________________________________________   */
+.container5{
+    height: 120vh;
+    width: 100%;
+    padding:50px 0px ;
+    
+}
+                    /* ------------boxes-6---------- */
+.boxes-6{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color:rgb(218, 205, 180);
+    border-radius:10px ;
+    padding: 20px;
+}
+                 /* ----------------box31 boxes-6------------- */
+.boxes-6 .box31{
+    width:40% ;
+    height: 100%;
+    padding: 20px;
+}
+                   /* -------------------box31 p ---------------- */
+.box31 p{
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+                   /* -------------h2 in box23----------- */
+.box31 h2{
+    line-height:30px ;
+    padding-bottom: 15px;
+    font-size: 40px;
+    color:blue;
+}
+                            /* --------------img-20------------ */
+.img-25{
+    height: 250px;
+    width: 90%;
+    border-radius: 10px;
+}
+                        /* ----------------box26 h6--------------- */
+.box31 h6{
+    font-size: 20px;
+    width: 90%;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+                        /* ---------------button------------- */
+.box31 button{
+    background-color: #0067e0;
+    border:none;
+    color: white;
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bolder; 
+}
+                   /* ______________left side____________ */
+                   /* -----------------box24----------------- */
+.box32{
+    width:60% ;
+    height:100% ;
+}
+                                 /* -------------box25---------- */
+.box33{
+    width:100% ;
+    display: flex;
+    gap:10px;
+    padding: 10px;
+    height: 50%;
+}
+                           /* -------------------box26-------------- */
+.box34{
+    width:50% ;
+    height:100%;
+}
+                        /* --------------p TAg in box26------------- */
+.box34 p{
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+                            /* ---------------p hover------------ */
+.box34 p:hover{
+    color:blue;
+}
+                           /* ----------------img-21-------------- */
+.img-26{
+    width:100%;
+    height:70%;
+    border-radius: 5px;
+}
+.box35{
+                             /* ----------------box27---------------- */
+    width:50% ;
+    height:100%;
+}
+                           /* -----------p Tag in box27----------- */
+.box35 p{
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+                                       /* -------------p hover----------------- */
+.box35 p:hover{
+    color:blue;
+}
+                                    /* --------------img-27---------------------- */
+.img-27{
+    width:100%;
+    height:70%;
+    border-radius: 5px;
+}
+                                      /* --------------box28--------------------- */
+.box36{
+    width:100% ;
+    display: flex;
+    gap:10px;
+    height:100%;
+}
+                                       /* -----------------box29---------------- */
+.box37{
+    width:50% ;
+    height:50%;
+}
+                          /* ------------------------p tag---------------------- */
+.box37 p{
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+                            /* ---------------p hover--------------- */
+.box37 p:hover{
+    color:blue;
+}
+                               /* ----------------box30------------ */
+.box38{
+    width:50% ;
+    height:50%;
+}
+                   /* ------------------p tag--------------------- */
+.box38 p{
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+                          /*-----------------p hover----------- */
+.box38 p:hover{
+    color:blue;
+}
+                             /* ----------------------img-23------------- */
+.img-28{
+    width:100%;
+    height:70%;
+    border-radius: 5px;
+}
+                    /* ---------------------img-24---------------- */
+.img-29{
     width:100%;
     height:70%;
     border-radius: 5px;
