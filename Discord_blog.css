@@ -6,92 +6,127 @@
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    background-image: linear-gradient(#0067e0 70%, white 30%) ;
-    height: 100vh;
+    background-image: linear-gradient(#0067e0 70%,white 30%) ;
+    max-height: 100vh;
     width:100% ;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    justify-content:center;
+    align-items:center;
+    padding-top: 50px;
 }
-.container .img-1{
+
+/*------------- img-1 ------- */ 
+.img-1{
     width:90%;
-    height: 90vh;
-    object-fit:cover;
-    border-radius: 5px; 
-    position: absolute; 
-    top: 50px; 
+    height: 80vh;
+    object-fit:contain;
+    border-radius: 10px;   
+}
+/* ---------------responsive-------- */
+@media screen and (max-width:800px) {
+    .container .img-1{
+        width:80%;
+        object-fit: contain;
+        height: 100vh;
+        border-radius: 5px;
+    }
+    .container{
+        height:70vh;
+    }
 }
 /* ------------------------------------- container end--------------------------------------------------------- */
 .container1{
-    min-height: 100vh;
-    width: auto;
-    padding:25px 45px;
+    height: 120vh;
+    width: 100%;
+    padding:25px ;
 }
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    padding-left: 40px;
+}
+             /*---h4 discard--- */
 .discard{
     font-family: 'Kanit', sans-serif;
     color: blue;
     line-height: 20px;
 }
+           /* ----header---- */
 .header1{
     font-family: 'Kanit', sans-serif;
-    line-height:35px;
-    font-size: 40px; 
+    line-height:45px;
+    font-size: 45px; 
 }
+                 /*-- header-hover-- */
 .header1:hover{
     cursor: pointer;
     color: blue;
 }
+         /* ---boxes----- */
 .boxes{
-    padding-top:50px ;
     display: flex;
-    justify-content: start;
-    align-items:start;
+    width: 100%;
+    margin-bottom: 30px;
+    height:380px ;
+    align-items: center;
+    justify-content: center;
     gap:20px;
 }
-.box1{ height:270px ;
-       width:400px;
+   /* ----img-box1-- */
+.box1{ height:320px ;
+       width:600px;
 }
+      /* ----box-1 p tag--- */
 .box1 p{
-    font-family: 'Kanit', sans-serif;
     color: blue;
-    font-size:12px ;
+    font-size:15px ;
     line-height:25px;
-}.box1 h3{ font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+}
+     /* ---h3---tag-- */
+.box1 h3{ 
+    font-size: 25px;
+    line-height: 25px;
    }
+     /* -----h3 hover--- */
 .box1 h3:hover{
     color: blue;
     cursor: pointer;
 }
-
-.box2{height:270px ;
-    width:400px;}
+     /* ----img-box2--- */
+.box2{height:320px ;
+    width:600px;
+}
+     /* -----box2 p-Tag--- */
 .box2 p{
-    font-family: 'Kanit', sans-serif;
     color:blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
 }
+    /* ----box2 h3 tag--- */
 .box2 h3{
-    font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+       /* ----h3 hover in box2 */
 .box2 h3:hover{
     color: blue;
     cursor: pointer;
 }
-
+     /* ----img-2- in box1---- */
 .img-2{
-    height:180px;
-    width:400px;
+    height:80%;
+    width:100%;
     border-radius:5px ;
 }
+     /* ----img-3- in box2---- */
 .img-3{
-    height:180px;
-    width:400px;
+    height:80%;
+    width:100%;
     border-radius:5px ;
 }
+     /* --------next div boxes-1----- */
 .boxes-1{
     height: 300px;
     width: 100%;
@@ -99,151 +134,479 @@
     justify-content: center;
     align-items: center;
     gap:20px;
+    padding-top: 10px;
+    margin-bottom: 30px;
 }
-.box3{ height:250px ;
-    width:260px;
+      /* -------box3------------ */
+.box3{ height:100% ;
+    width:33%;
 }
-.box4{ height:250px ;
-    width:260px;
+       /* -------box4------------ */
+.box4{ height:100% ;
+    width:33%;
 }
-.box5{height:250px ;
- width:260px;}
+        /* -------box5------------ */
+.box5{height:100% ;
+ width:33%;
+}
+       /* -------box3 -p -Tag */
 .box3 p{
-    font-family: 'Kanit', sans-serif;
     color: blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
+    padding-top: 5px;
 }
+       /* -------box4 -p -Tag */
 .box4 p{
- font-family: 'Kanit', sans-serif;
  color:blue;
  line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
+    padding-top: 5px;
 }
+       /* -------box4 -p -Tag */
 .box5 p{
-    font-family: 'Kanit', sans-serif;
     color:blue;
+    padding-top: 5px;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
    }
+     /* ------box3 h3-Tag------- */
 .box3 h3{
     font-family: 'Kanit', sans-serif;  
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 26px;
 }
+     /* ------box4 h3-Tag------- */
 .box4 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 26px;
 }
+     /* ------box5 h3-Tag------- */
 .box5 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 26px;
 }
+      /* -------h3 hover---- */
 .box3 h3:hover{
     color: blue;
     cursor: pointer;
 }
+      /* -------h3 hover---- */
 .box4 h3:hover{
  color: blue;
  cursor: pointer;
 }
+      /* -------h3 hover---- */
 .box5 h3:hover{
     color: blue;
     cursor: pointer;
   }
+      /* -----box3 img-4------- */
 .img-4{
- height:150px;
- width:260px;
+ height:65%;
+ width:100%;
  border-radius:5px ;
 }
+      /* -----box4 img-5------- */
 .img-5{
- height:150px;
- width:260px;
+ height:65%;
+ width:100%;
  border-radius:5px ;
 }
+      /* -----box5 img-6------- */
 .img-6{
-    height:150px;
-    width:260px;
+    height:65%;
+    width:100%;
     border-radius:5px ;
 }
+      /* ---container1  boxes-2 ------ */
 .boxes-2{
     height: 300px;
+    margin-bottom:50px ;
     width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
     gap:20px;
+    padding-top: 10px;
 }
-.box6{ height:250px ;
-    width:260px;
+      /* --------boxes-2 box6----- */
+.box6{
+     height:100% ;
+    width:33%;
 }
-.box7{ height:250px ;
-    width:260px;
+      /* --------boxes-2 box7----- */
+.box7{ height:100% ;
+    width:33%;
 }
-.box8{height:250px ;
- width:260px;}
+      /* --------boxes-2 box8----- */
+.box8{height:100% ;
+ width:33%;
+}
+     /* -------box6 p-Tag----- */
 .box6 p{
     font-family: 'Kanit', sans-serif;
     color: blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
 }
+     /* -------box7 p-Tag----- */
 .box7 p{
- font-family: 'Kanit', sans-serif;
- color:blue;
- line-height:25px;
-    font-size:12px ;
+    font-family: 'Kanit', sans-serif;
+    color:blue;
+    line-height:25px;
+    font-size:15px ;
 }
+     /* -------box8  p-Tag----- */
 .box8 p{
     font-family: 'Kanit', sans-serif;
     color:blue;
     line-height:25px;
-    font-size:12px ;
+    font-size:15px ;
    }
+     /* box6    h3-tag------ */
 .box6 h3{
     font-family: 'Kanit', sans-serif;  
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+      /* box7    h3-tag------ */
 .box7 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+      /* box8    h3-tag------ */
 .box8 h3{
     font-family: 'Kanit', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 25px;
 }
+       /* ----h3 hover--- */
 .box6 h3:hover{
     color: blue;
     cursor: pointer;
 }
+       /* ----h3 hover--- */
 .box7 h3:hover{
  color: blue;
  cursor: pointer;
 }
+       /* ----h3 hover--- */
 .box8 h3:hover{
     color: blue;
     cursor: pointer;
   }
+        /* ----box6  --img-7----- */
 .img-7{
- height:150px;
- width:260px;
+ height:70%;
+ width:100%;
  border-radius:5px ;
 }
+       /* ----box7  --img-8----- */
 .img-8{
- height:150px;
- width:260px;
+ height:70%;
+ width:100%;
  border-radius:5px ;
 }
+       /* ----box8  --img-9----- */
 .img-9{
-    height:150px;
-    width:260px;
+    height:70%;
+    width:100%;
     border-radius:5px ;
 }
-/* ----------------------------------------- container1 end------------------------------------------------ */
-.container2{
-    height: 120vh;
-    width: 100%;
-
+        /* ----------responsive-------- */
+@media screen and (max-width:550px) {
+    .boxes{
+        flex-direction: column;
+        width:100% ;
+        height:fit-content;
+        margin-bottom:10px;
+    }
+    .container1{
+        padding-left:20px ;
+        min-height: fit-content;
+    }
+    .head{
+        padding-left: 0;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    .box1{
+        width:100%;
+        padding-top: 0;
+        height:300px;
+    }
+    .box1 h3{
+        font-size: 20px;
+    }
+    .img-2{
+        width: 100%;
+        height:65% ;
+    }
+    .img-3{
+        width: 100%;
+        height:65% ;
+    }
+    .box2{
+        width:100%;
+        height: 300px;    
+    }
+    .box2 h3{
+        font-size: 20px;
+    }
+    .discard{
+        font-size: 20px;
+        padding-bottom:10px ;
+    }
+    .header1{
+        font-size: 30px;
+        line-height:30px ;
+    }
+         /* ------------boxes-1 --------------- */
+    .boxes-1{
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .box3{
+        width: 100%;
+    }
+    .box3 h3{
+         font-size: 20px;
+    }
+    .box4{
+        width: 100%;
+    }
+    .box4 h3{
+         font-size: 20px;
+    }
+    .box5{
+        width: 100%;
+    }
+    .box5 h3{
+         font-size: 20px;
+    }
+    .img-4{
+        height: 150px;
+    }
+    .img-5{
+        height: 150px;
+    }
+    .img-6{
+        height: 150px;
+    }
+             /* ----------------boxes-2 ---------------- */
+    .boxes-2{
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+        margin-bottom:10px;
+    }
+    .box6{
+        width: 100%;
+    }
+    .box6 h3{
+         font-size: 20px;
+    }
+    .box7{
+        width: 100%;
+    }
+    .box7 h3{
+         font-size: 20px;
+    }
+    .box8{
+        width: 100%;
+    }
+    .box8 h3{
+         font-size: 20px;
+    }
+    .img-7{
+        height: 150px;
+    }
+    .img-8{
+        height: 150px;
+    }
+    .img-9{
+        height: 150px;
+    }
 }
+                              /*-------- responsive 500px to 1000px----------- */
+@media screen and (min-width:551px) and (max-width:1000px) {
+.boxes{
+        width:100% ;
+        height:fit-content;
+    }
+    .container1{
+        padding-left:20px ;
+        min-height: fit-content;
+    }
+    .head{
+        padding-left: 0;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+    .box1{
+        width:100%;
+        padding-top: 0;
+        height:300px;
+    }
+    .box1 h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .img-2{
+        width:100%;
+        height: 65%;
+    }
+    .img-3{
+        width:100%;
+        height: 65%;
+    }
+    .box2{
+        width:100%;
+        height:300px;    
+    }
+    .box2 h3{
+        font-size: 22px;
+        line-height:20px ;
+    }
+    .discard{
+        font-size: 23px;
+        padding-bottom:10px ;
+    }
+    .header1{
+        font-size: 32px;
+        line-height:30px ;
+    }
+                    /* -----------boxes-1--------------- */
+    .boxes-1{
+        height:400px;
+        width: 100%;
+        margin-bottom: 10px ;
+    }
+    .box3{
+        width: 100%;
+        height:400px;
+    }
+    .box3 h3{
+         font-size: 25px;
+    }
+    .box4{
+        width: 100%;
+        height:400px;
+    }
+    .box4 h3{
+         font-size: 25px;
+    }
+    .box5{
+        width: 100%;
+        height:400px;
+    }
+    .box5 h3{
+         font-size: 25px;
+    }
+    .img-4{
+        height:200px;
+    }
+    .img-5{
+        height:200px;
+    }
+    .img-6{
+        height:200px;
+    }  
+                       /* -----------boxes-1--------------- */
+    .boxes-1{
+        height:400px;
+        width: 100%;
+        margin-bottom: 10px ;
+    }
+    .boxes-1 p{
+        line-height:15px ;
+        margin-bottom: 10px;
+    }
+    .box3{
+        width: 100%;
+        height:400px;
+    }
+    .box3 h3{
+         font-size: 25px;
+    }
+    .box4{
+        width: 100%;
+        height:400px;
+    }
+    .box4 h3{
+         font-size: 25px;
+    }
+    .box5{
+        width: 100%;
+        height:400px;
+    }
+    .box5 h3{
+         font-size: 25px;
+    }
+    .img-4{
+        height:200px;
+    }
+    .img-5{
+        height:200px;
+    }
+    .img-6{
+        height:200px;
+    }
+              /* --------boxes-2----------- */
+    .boxes-2{
+        height:400px;
+        width: 100%;
+        margin-bottom: 10px ;
+    }
+    .boxes-2 p{
+        line-height:15px ;
+        margin-bottom: 10px;
+    }
+    .box6{
+        width: 100%;
+        height:400px;
+    }
+    .box6 h3{
+         font-size: 25px;
+    }
+    .box7{
+        width: 100%;
+        height:400px;
+    }
+    .box7 h3{
+         font-size: 25px;
+    }
+    .box8{
+        width: 100%;
+        height:400px;
+    }
+    .box8 h3{
+         font-size: 25px;
+    }
+    .img-7{
+        height:200px;
+    }
+    .img-8{
+        height:200px;
+    }
+    .img-9{
+        height:200px;
+    }  
+    
+}
+/* ----------------------------------------- container1 end------------------------------------------------ */
+                  /* -----------container2------------ */
+.container2{
+    height: 130vh;
+    width: 100%;
+}
+                   /* --------boxes-3------------------ */
 .boxes-3{
     height: 100%;
     width: 100%;
@@ -252,123 +615,251 @@
     border-radius:10px ;
     padding: 20px;
 }
+                   /* ----------------box9-------------- */
 .boxes-3 .box9{
     width:40% ;
     height: 100%;
     padding: 20px;
 }
+                          /* -------p Tag in box9---------- */
 .box9 p{
-    font-family: 'Kanit', sans-serif;
     line-height: 30px;
 }
+                           /* -------h2 Tag in box9---------- */
 .box9 h2{
-    font-family: 'Kanit', sans-serif;
-    line-height:30px ;
+    line-height:37px ;
     padding-bottom: 15px;
     font-size: 40px;
     color:blue;
 }
+                           /* -------------img-10--------------- */
 .img-10{
-    height: 130px;
-    width: 80%;
+    height: 250px;
+    width: 90%;
     border-radius: 10px;
 }
+                 /*  -------h6 Tag in box9------- */
 .box9 h6{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
-    width: 100%;
+    font-size: 20px;
+    line-height:25px ;
+    width: 90%;
     padding-top: 10px;
     padding-bottom: 20px;
 }
+                     /* ---------------button----------- */
 .box9 button{
-    font-family: 'Kanit', sans-serif;
     background-color: #0067e0;
     border:none;
     color: white;
-    border-radius: 20px;
-    width: auto;
-    padding: 10px;
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bolder;
 }
-
+                    /* ---------------boxes-3 box10----------- */
 .boxes-3 .box10{
     width:65% ;
     height: 100%;
 }
+                    /* --------------box11---------------- */
 .box11{
     height: 55%;
 }
+                   /* --------------img-11 in boxes-3--------- */
 .img-11{
     width: 100%;
     height: 80%;
     border-radius: 5px;
-}
+} 
+                   /* -----------------p-Tag in box11---------- */
 .box11 p{
-    font-family: 'Kanit', sans-serif;
-    padding-top: 10px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
+                    /* --------------------box11 p Tag hover---- */
 .box11 p:hover{
     color: #0067e0;
 }
+                    /* ----------------box12------------------- */
 .box12{
     height: 45%;
     display: flex;
     gap:5px;
 }
+                               /* ---------box-13   --------------- */
 .box-13{
     width: 33%;
-    
+    height: 250px;    
 }
+                          /* ------p Tag in Box-13---------------- */
 .box-13 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 20px;
     padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                   /* ---------------p Tag hover---------- */
 .box-13 p:hover{
     color: #0067e0;
 }
+                          /* -------------img-12------------ */
 .img-12{
     width: 100%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
 }
+                   /* ---------------box-14------------ */
 .box-14{
     width: 33%;
-}
+    height: 250px;
+} 
+                      /*---------p---Tag in box-14------------- */
 .box-14 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 20px;
     padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                    /* -----------p tag  hover------ */
 .box-14 p:hover{
     color: #0067e0;
 }
+                  /* -----------------img-13------------ */
 .img-13{
     width: 100%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
 }
+                   /* --------------box-15-------------- */
 .box-15{
     width: 33%;
+    height:250px ;
 }
+                  /* ----p Tag in box-15---------------- */
 .box-15 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 20px;
     padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                /* ------------p Tag hover------------- */
 .box-15 p:hover{
     color: #0067e0;
 }
+                /* ----------------img-14---------------- */
 .img-14{
     width: 100%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
 }
+                      /* ---______________RESPONSIVE___________*/
+@media screen and (max-width:550px) {
+    .boxes-3{
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px;
+    }
+    .boxes-3 .box9{
+        width:100% ;
+    }
+    .box9 p{
+        line-height:20px ;
+    }
+    .img-10{
+        width:100%;
+    }
+    .box9 button{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+                     /* _____________-LEFT SIDE BOX-___________ */
+    .boxes-3 .box10{
+         width: 100%;
+    } .box11{
+        height: 300px;
+        margin-bottom:20px ;
+    }
+    .img-11{
+        height: 70%;
+    }
+    .box11 p{
+        line-height: 22px;
+    }
+    .box12{
+        flex-direction: column;
+    }
+    .box-13{
+        width: 100%;
+    }
+    .box-14{
+        width: 100%;
+    }
+    .box-15{
+        width: 100%;
+    }
+}
+    /* _______________RESPONSIVE 551 TO 1000px______________ */
+    @media screen and (min-width:551px) and (max-width:1000px) {
+    .boxes-3{
+        height: fit-content;
+        padding: 20px;
+        gap:10px;
+    }
+    .boxes-3 .box9{
+        width:45% ;
+        padding: 0;
+    }
+    .box9 p{
+        line-height:20px ;
+    }
+    .img-10{
+        width:95%;
+    }
+    .box9 button{
+        padding: 16px;
+    }
+                     /* _____________-LEFT SIDE BOX-___________ */
+    .boxes-3 .box10{
+         width: 55%;
+    } .box11{
+        height: 300px;
+    }
+    .img-11{
+        height: 70%;
+    }
+    .box11 p{
+        line-height: 20px;
+    }
+    .box12{
+        flex-direction: column;
+    }
+    .box-13{
+        width: 100%;
+        height: 230px;  
+    }
+    .box-14{
+        width: 100%;
+        height: 230px;
+    }
+    .box-15{
+        width: 100%;
+        height: 230px;
+    }
+}
+
+
 /* ----------------------------------------------container2 end------------------------- */
 .container3{
-    height: 140vh;
+    height: 130vh;
     width: 100%;
     padding-top:50px ;
-}
+}                 
+                          /* ---------------boxes-4 --------------- */
 .boxes-4{
     height: 100%;
     width: 100%;
@@ -377,123 +868,253 @@
     border-radius:10px ;
     padding: 20px;
 }
+                       /* ---------------box16 in boxes-4 -------------- */
 .boxes-4 .box16{
     width:40% ;
     height: 100%;
     padding: 20px;
 }
+                    /* -------------p Tag in box16------------ */
 .box16 p{
-    font-family: 'Kanit', sans-serif;
     line-height: 30px;
 }
+                            /* -----------------h2 tag---------------- */
 .box16 h2{
-    font-family: 'Kanit', sans-serif;
     line-height:30px ;
     padding-bottom: 15px;
     font-size: 40px;
     color:blue;
 }
+                          /* ----------------img-15--------------- */
 .img-15{
-    height: 130px;
-    width: 80%;
+    height: 250px;
+    width: 90%;
     border-radius: 10px;
 }
+                             /* -------------box16 h6 Tag--------- */
 .box16 h6{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
-    width: 100%;
+    font-size: 20px;
+    width: 90%;
+    line-height: 25px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
+                              /* -------------button------------- */
 .box16 button{
-    font-family: 'Kanit', sans-serif;
     background-color: #0067e0;
     border:none;
     color: white;
-    border-radius: 20px;
-    width: auto;
-    padding: 10px;
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bolder;
 }
-
+                                /* -----------------boxes-4 box17----------- */
 .boxes-4 .box17{
     width:65% ;
     height: 100%;
 }
+                       /* -----------box18-------- */
 .box18{
     height: 55%;
 }
+                                  /* ----------img-16------------- */
 .img-16{
     width: 100%;
     height: 80%;
     border-radius: 5px;
 }
+                               /* -------------------box18 p Tag----------- */
 .box18 p{
-    font-family: 'Kanit', sans-serif;
-    padding-top: 10px;
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                                /* -------------------p Tag hover---------- */
 .box18 p:hover{
     color: #0067e0;
 }
+                                /* ---------------box19---------------- */
 .box19{
     height: 45%;
     display: flex;
     gap:5px;
 }
+                              /* ----------------box-20-------------- */
 .box-20{
     width: 33%;
+    height: 250px;
     
 }
+                              /* ---------------P Tag------------- */
 .box-20 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 20px;
     padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                                    /* ------------p tag hover---------- */
 .box-20 p:hover{
     color: #0067e0;
 }
+                                /* -----------------img-17------------- */
 .img-17{
     width: 100%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
 }
+                                     /* -------------box-21-------------- */
 .box-21{
     width: 33%;
+    height: 250px;
 }
+                                     /* ----------------p Tag in box-21---------- */
 .box-21 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 20px;
     padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                           /* ------------------p Tag hover---------------- */
 .box-21 p:hover{
     color: #0067e0;
 }
+                        /* ---------------img-18 ---------------- */
 .img-18{
     width: 100%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
 }
+                       /* ---------------box-22---------------- */
 .box-22{
     width: 33%;
-}
+    height: 250px;
+}  
+                       /* -----------p Tag in box-22------------- */
 .box-22 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 15px;
+    font-size: 19px;
+    line-height: 20px;
     padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                  /* -----------------p Tag hover---------------- */
 .box-22 p:hover{
     color: #0067e0;
 }
+                                /* ---------------img-19---------- */
 .img-19{
     width: 100%;
-    height: 120px;
+    height: 160px;
     border-radius: 5px;
+} 
+                            /*_______________RESPONSIVE________________ */
+@media screen and (max-width:550px) {
+    .boxes-4{
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px;
+    }
+    .boxes-4 .box16{
+        width:100% ;
+    }
+    .box16 p{
+        line-height:20px ;
+    }
+    .img-15{
+        width:100%;
+    }
+    .box16 button{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+                     /* _____________-LEFT SIDE BOX-___________ */
+    .boxes-4 .box17{
+         width: 100%;
+    } .box18{
+        height: 300px;
+        margin-bottom:20px ;
+    }
+    .img-16{
+        height: 70%;
+    }
+    .box18 p{
+        line-height: 22px;
+    }
+    .box19{
+        flex-direction: column;
+    }
+    .box-20{
+        width: 100%;
+    }
+    .box-21{
+        width: 100%;
+    }
+    .box-22{
+        width: 100%;
+    }
 }
+    /* _______________RESPONSIVE 551 TO 1000px______________ */
+    @media screen and (min-width:551px) and (max-width:1000px) {
+    .boxes-4{
+        height: fit-content;
+        padding: 20px;
+        gap:10px;
+    }
+    .boxes-4 .box16{
+        width:45% ;
+        padding: 0;
+    }
+    .box16 p{
+        line-height:20px ;
+    }
+    .img-15{
+        width:95%;
+    }
+    .box16 button{
+        padding: 16px;
+    }
+                     /* _____________-LEFT SIDE BOX-___________ */
+    .boxes-4 .box17{
+         width: 55%;
+    } .box18{
+        height: 300px;
+    }
+    .img-16{
+        height: 70%;
+    }
+    .box18 p{
+        line-height: 20px;
+    }
+    .box19{
+        flex-direction: column;
+    }
+    .box-20{
+        width: 100%;
+        height: 230px;  
+    }
+    .box-21{
+        width: 100%;
+        height: 230px;
+    }
+    .box-22{
+        width: 100%;
+        height: 230px;
+    }
+}
+
 /* -------------------------------container3 end-------------------------- */
 .container4{
-    height: 130vh;
+    height: 120vh;
     width: 100%;
     padding-top:50px ;
+    
 }
+                    /* ------------boxes-5---------- */
 .boxes-5{
     height: 100%;
     width: 100%;
@@ -502,127 +1123,161 @@
     border-radius:10px ;
     padding: 20px;
 }
+                 /* ----------------box23 boxes-5------------- */
 .boxes-5 .box23{
     width:40% ;
     height: 100%;
     padding: 20px;
 }
+                   /* -------------------box23 p ---------------- */
 .box23 p{
-    font-family: 'Kanit', sans-serif;
-    line-height: 30px;
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                   /* -------------h2 in box23----------- */
 .box23 h2{
-    font-family: 'Kanit', sans-serif;
     line-height:30px ;
     padding-bottom: 15px;
     font-size: 40px;
     color:blue;
 }
+                            /* --------------img-20------------ */
 .img-20{
-    height: 130px;
-    width: 80%;
+    height: 250px;
+    width: 90%;
     border-radius: 10px;
 }
+                        /* ----------------box26 h6--------------- */
 .box23 h6{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
-    width: 100%;
+    font-size: 20px;
+    width: 90%;
+    line-height: 25px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
+                        /* ---------------button------------- */
 .box23 button{
-    font-family: 'Kanit', sans-serif;
     background-color: #0067e0;
     border:none;
     color: white;
-    border-radius: 20px;
-    width: auto;
-    padding: 10px;
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bolder; 
 }
+                   /* ______________left side____________ */
+                   /* -----------------box24----------------- */
 .box24{
     width:60% ;
     height:100% ;
 }
+                                 /* -------------box25---------- */
 .box25{
     width:100% ;
     display: flex;
     gap:10px;
+    padding: 10px;
     height: 50%;
 }
+                           /* -------------------box26-------------- */
 .box26{
     width:50% ;
     height:100%;
 }
+                        /* --------------p TAg in box26------------- */
 .box26 p{
-    line-height: 17px;
-    padding-top:10px ;
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                            /* ---------------p hover------------ */
 .box26 p:hover{
     color:blue;
 }
+                           /* ----------------img-21-------------- */
 .img-21{
     width:100%;
-    height:60%;
+    height:70%;
     border-radius: 5px;
 }
 .box27{
+                             /* ----------------box27---------------- */
     width:50% ;
     height:100%;
 }
+                           /* -----------p Tag in box27----------- */
 .box27 p{
-    line-height: 17px;
-    padding-top:10px ;
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                                       /* -------------p hover----------------- */
 .box27 p:hover{
     color:blue;
 }
+                                    /* --------------img-27---------------------- */
 .img-22{
     width:100%;
-    height:60%;
+    height:70%;
     border-radius: 5px;
 }
+                                      /* --------------box28--------------------- */
 .box28{
     width:100% ;
     display: flex;
     gap:10px;
     height:100%;
 }
+                                       /* -----------------box29---------------- */
 .box29{
     width:50% ;
     height:50%;
 }
+                          /* ------------------------p tag---------------------- */
 .box29 p{
-    line-height: 17px;
-    padding-top:10px ;
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                            /* ---------------p hover--------------- */
 .box29 p:hover{
     color:blue;
 }
+                               /* ----------------box30------------ */
 .box30{
     width:50% ;
     height:50%;
 }
+                   /* ------------------p tag--------------------- */
 .box30 p{
-    line-height: 17px;
-    padding-top:10px ;
+    font-size: 19px;
+    line-height: 20px;
+    padding-top:10px;
+    font-weight: bolder;
+    cursor: pointer;
 }
+                          /*-----------------p hover----------- */
 .box30 p:hover{
     color:blue;
 }
+                             /* ----------------------img-23------------- */
 .img-23{
     width:100%;
-    height:60%;
+    height:70%;
     border-radius: 5px;
 }
+                    /* ---------------------img-24---------------- */
 .img-24{
     width:100%;
-    height:60%;
+    height:70%;
     border-radius: 5px;
 }
-
-
-
-
-
-
-
