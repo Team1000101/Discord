@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* -------------------------------------------------navigation bar */
+nav .nav_title div:nth-child(4) p{
+    width:100%;
+}
 .container{
     background-image: linear-gradient(#0067e0 70%,white 30%) ;
     max-height: 100vh;
@@ -603,7 +607,7 @@
 /* ----------------------------------------- container1 end------------------------------------------------ */
                   /* -----------container2------------ */
 .container2{
-    height: 130vh;
+    min-height: 130vh;
     width: 100%;
 }
                    /* --------boxes-3------------------ */
@@ -855,7 +859,7 @@
 
 /* ----------------------------------------------container2 end------------------------- */
 .container3{
-    height: 130vh;
+    min-height: 130vh;
     width: 100%;
     padding-top:50px ;
 }                 
@@ -1016,7 +1020,7 @@
 @media screen and (max-width:550px) {
     .boxes-4{
         flex-direction: column;
-        height: fit-content;
+        height:fit-content;
         padding: 10px;
     }
     .boxes-4 .box16{
@@ -1109,7 +1113,7 @@
 
 /* -------------------------------container3 end-------------------------- */
 .container4{
-    height: 120vh;
+    min-height: 120vh;
     width: 100%;
     padding-top:50px ;
     
@@ -1282,10 +1286,48 @@
     height:70%;
     border-radius: 5px;
 }
+                          /* __________________RESPONSIVE_)_________________ */
+@media screen and (max-width:550px) {
+    .boxes-5{
+        flex-direction: column;
+        min-height:fit-content ;
+    }
+    .boxes-5 .box23{
+        width: 100%;
+    }
+    .img-20{
+        width: 100%;
+    }
+    .box23 button{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+                                  /* ______________LEFT SIDE__________________ */
+    .box24{
+        width:100% ;
+    }
+    .box25{
+        flex-direction: column;
+    }
+    .box26,.box27{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .box28{
+        flex-direction: column;
+    }
+    .box29,.box30{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width:551px) and (max-width:1000px) {
+    
+}
                            /* -----container4 end----------- */
           /* ________________________________________________________________   */
 .container5{
-    height: 120vh;
+    min-height: 120vh;
     width: 100%;
     padding:50px 0px ;
     
@@ -1457,3 +1499,39 @@
     height:70%;
     border-radius: 5px;
 }
+                     /* __________RESPONSIVE__________________ */
+@media screen and (max-width:550px) {
+    .boxes-6{
+        flex-direction: column;
+        min-height:fit-content ;
+    }
+    .boxes-6 .box31{
+        width: 100%;
+    }
+    .img-25{
+        width: 100%;
+    }
+    .box31 button{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+                               /* _______LEFT SITE__________________ */
+    .box32{
+        width:100% ;
+    }
+    .box33{
+        flex-direction: column;
+    }
+    .box34,.box35{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .box36{
+        flex-direction: column;
+    }
+    .box37,.box38{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}                         
+ 
