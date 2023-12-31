@@ -5,38 +5,54 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --txt_white:white;
+}
+/* -------------------------------------------------navigation bar */
+nav .nav_title div:nth-child(2) p{
+    width:100%;
+}
 /*---------------------------------------------------------------- introduction */
+/* flex-properties */
 section>.intro{
     margin-top:85px;
     display: flex;
     justify-content:center;
     align-items:center;
     padding: 50px 0;
+    padding-bottom: 130px;
     gap:50px;
+
 }
 /* heading */
 section>.intro>.txt h1{
     font-size:60px;
     text-transform: uppercase;
+    color: #8BC6EC;
     line-height: 50px;
     letter-spacing:-3px;
     padding-bottom:20px;
+    transition: all 0.5s;
+}
+section>.intro>.txt h1:hover{
+    letter-spacing:0px;
+    transform: scale(1.1);
 }
 /* paragraph */
 section>.intro>.txt p{
     font-size: 20px;
+    transition: all 0.5s;
 }
 /* ship */
 section>.intro>.ship{
     width:500px;
     height:380px;
-    /* background-color: burlywood; */
     animation-name: ship;
     animation-duration:10s;
     animation-iteration-count: infinite;
     animation-timing-function:ease-in-out;
     position:relative;
-    z-index: -1;
+    z-index:5;
 }
 section>.intro>.ship img[alt~="Prometheous"]{
     width:100%;
@@ -96,6 +112,11 @@ section>.intro>.txt h1{
         height: fit-content;
     }
 }
+@media (max-width:500px){
+    section>.intro{
+        margin-top:57px;
+    }    
+}
 @media only screen and (min-width:200px) and (max-width:530px){
 section>.intro{
     padding:20px 30px 50px;
@@ -140,4 +161,111 @@ section>.intro>.txt p{
         transform: translateX(50px);
     }
 }
+}
+/* ----------------------------------nitro_details */
+.nitro_detail{
+ padding:100px 50px;
+ gap:50px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+}
+/* heading */
+.nitro_detail>div>h1{
+    font-size:40px;
+    transition: all 0.5s;
+}
+.nitro_detail>div:hover h1{
+    transform:translateX(20px);
+}
+/* icons */
+.nitro_detail>div i{
+    font-size:22px;
+    transition: all 0.5s;
+}
+/* paragraph */
+.nitro_detail>div>div p{
+    font-size:22px;
+    transition: all 0.5s;
+}
+.nitro_detail>div:hover >div p{
+    transform: translateX(10px);
+}
+.nitro_detail>div:has(p:nth-child(2):hover) i:nth-child(1){
+    transform: scale(1.1);
+    background-color: white;
+    padding:5px;
+    border-radius: 50%;
+}
+.nitro_detail>.basic:has(p:nth-child(2):hover) i:nth-child(1){
+    color:#0093E9;
+}
+.nitro_detail>.nitro:has(p:nth-child(2):hover) i:nth-child(1){
+    color:#C850C0 ;
+}
+.nitro_detail>.basic{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    position: relative;
+}
+.nitro_detail>.nitro{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    position: relative;
+}
+/* main */
+.nitro_detail>div{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    border-radius: 10px;
+    color: var(--txt_white);
+    transition: all 0.5s;
+    height: 450px;
+}
+.nitro_detail>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.nitro_detail>div>div{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+/* button */
+.nitro_detail>div>p{
+    width:100%;
+    padding: 10px 0;
+    font-size:22px;
+    border-radius: 30px;
+    border:2px solid white;
+    background-color: white;
+    color:black;
+    text-align: center;
+    transition: all 0.5s;
+}
+.nitro_detail>.basic>p{
+    position: absolute;
+    bottom:15px;
+    left:15px;
+    color:#0093E9;
+    width: calc(100% - 30px);
+}
+.nitro_detail>.nitro>p{
+    position: absolute;
+    bottom:15px;
+    left:15px;
+    color: #C850C0;
+    width: calc(100% - 30px);
+}
+.nitro_detail>.basic:hover >p{
+    transform: translateY(40px);
+}
+.nitro_detail>.basic:has(div p:hover) #sub{
+    border-left:10px solid #0093E9;
+}
+.nitro_detail>.nitro:hover >p{
+    transform: translateY(40px);
+}
+.nitro_detail>.nitro:has(div p:hover) #sub{
+    border-left:10px solid #C850C0  ;
 }

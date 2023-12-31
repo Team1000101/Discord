@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* -------------------------------------------------navigation bar */
+nav .nav_title div:nth-child(1) p{
+    width:100%;
+}
+/* root */
+:root{
+    --text-color:white;
+    --cursor:pointer;
+}
+.main-look{
+    width: 100%;
+}
+.laptop{
+    background-color:#191919;
+    height: 89vh;
+    color: var(--text-color);
+    /* padding:300px 150px 200px ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-lap{
+    width: 50%;
+    line-height: 40px;
+}
+.text-lap h1{
+    font-size: 60px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 65px;
+}
+.text-lap>p{
+    padding: 30px 0px;
+    line-height: 22px;
+}
+.win{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-icon{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3559E0;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 17px;
+    transition: all 2s;
+}
+.top-icon:hover{
+    background-color: #5fbdff;
+    cursor: var(--cursor);
+}
+.pic-lap{
+    width: 50%;
+    padding: 50px;
+}
+.pic-lap img{
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+}
+/* other-downloads */
+.other-down{
+    padding: 250px 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    gap: 50px;
+}
+.spacing{
+    width: 100%;
+    padding:150px ;
+    background-color: white;
+}
+.bag{
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:500px) {
+    .laptop{
+        flex-direction: column;
+        padding: 540px 10px 0px;
+    }
+    .text-lap{
+        width: 99%;
+    }
+    .text-lap h1{
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .win{
+        width: 100%;
+        flex-direction: column;
+    }
+    .top-icon{
+        width: 90%;
+    }
+    .pic-lap{
+        width: 90%;
+        padding: 10px;
+    }
+    .pic-lap img{
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
