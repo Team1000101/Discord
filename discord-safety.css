@@ -3,3 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
 }
+/* -------------------------------------------------navigation bar */
+nav .nav_title div:nth-child(3) p{
+    width:100%;
+}

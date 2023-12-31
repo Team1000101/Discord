@@ -18,8 +18,7 @@ nav{
     align-items: center;
     padding: 20px 60px;
     background-color: #0093E9;
-background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     position:fixed;
     width:100%;
     top:0;
@@ -27,7 +26,7 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     z-index: 100;
 }
 /* logo */
-nav .logo i,h1,nav>button{
+nav .logo i,a,nav>button{
     cursor:var(--cursor);
 }
 nav .logo i{
@@ -35,17 +34,20 @@ nav .logo i{
     color:var(--txt-color);
     transition: all 1s;
 }
-nav .logo h1{
+nav .logo a{
+    font-size: 22px;
+    font-weight: bold;
     color:var(--txt-color);
     transition: all 0.5s;
+    text-decoration: none;
 } 
-nav .logo:hover h1{
+nav .logo:hover a{
     transform: matrix(1.1,0,0,1.1,10,0);
 }
 nav .logo:hover i{
     transform: scale(1.3);
     background-color: white;
-    color: #0067e0;
+    color: #0093E9;
     padding:2px;
     border-radius: 50%;
 }
@@ -70,7 +72,9 @@ nav .nav_title a{
     font-size:19px;
     letter-spacing: 1px;
     font-weight:500;
+    transition: all 0.5s;
 }
+
 /* moving line */
 nav .nav_title div p{
     background-color: var(--bg-color);
@@ -87,23 +91,51 @@ nav:has(.logo:nth-child(1):hover) .nav_title div p{
     width:100%;
 }
 nav:has(.logo:nth-child(1):hover) .nav_title div>p{
-    background-color: #0067e0;
+    background-color:#80D0C7;
 }
 /* sign up button */
-nav>button{
+nav>.flow{
+    position: relative;
+}
+nav>.flow button{
     background-color: var(--bg-color);
     border:none;
+    color:#80D0C7;
     border: 2px solid transparent;
-    padding: 7px 15px;
+    padding: 7px 40px;
     font-size:18px;
     text-transform: capitalize;
     font-weight: bold;
     border-radius:40px;   
     transition: all 1s;
 }
-nav>button:hover{
-    color:#3081D0;
+nav>.flow button{
+    color:black;
+    position:relative;
+    z-index: 2;
+    transition:all 1.5s linear;
     background-color:white;
+}
+nav>.flow button:hover{
+    color: var(--txt-color);
+    background-color: transparent;
+}
+nav>.flow p{
+    height: 45px;
+    width:0px;
+    background-color:transparent;
+    border-radius:40px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    border:2px solid transparent;
+    transition: all 0.7s linear;
+}
+nav>.flow button:hover ~p{
+    width:100%;
+    background-color:#80D0C7;
+    border:2px solid white;
 }
 /* menu bar */
 nav label,nav input{
@@ -233,7 +265,7 @@ nav .nav_title .btn{
     nav .logo i{
         font-size: 20px;
     }
-    nav .logo h1{
+    nav .logo a{
         font-size: 20px;
     } 
     /* sign up button */
