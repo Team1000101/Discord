@@ -251,7 +251,7 @@ nav .nav_title div:nth-child(1) p{
     .other-down{
         grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
         padding: 20px 10px;
-        gap: 15px;
+        gap: 25px;
     }
     .one-display img{
         max-width: 100%;
