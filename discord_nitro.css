@@ -8,6 +8,12 @@
 :root{
     --txt_white:white;
 }
+body::-webkit-scrollbar{
+    width:5px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #8BC6EC;
+}
 /* -------------------------------------------------navigation bar */
 nav .nav_title div:nth-child(2) p{
     width:100%;
@@ -28,7 +34,7 @@ section>.intro{
 section>.intro>.txt h1{
     font-size:60px;
     text-transform: uppercase;
-    color: #8BC6EC;
+    color: #1A1B17;
     line-height: 50px;
     letter-spacing:-3px;
     padding-bottom:20px;
@@ -37,10 +43,12 @@ section>.intro>.txt h1{
 section>.intro>.txt h1:hover{
     letter-spacing:0px;
     transform: scale(1.1);
+    color:silver;
 }
 /* paragraph */
 section>.intro>.txt p{
     font-size: 20px;
+    color: #FAC213;
     transition: all 0.5s;
 }
 /* ship */
@@ -214,14 +222,14 @@ section>.intro>.txt p{
 }
 /* main */
 .nitro_detail>div{
-    padding:20px;
+    padding:30px;
     display: flex;
     flex-direction: column;
     gap:12px;
     border-radius: 10px;
     color: var(--txt_white);
     transition: all 0.5s;
-    height: 450px;
+    min-height: 450px;
 }
 .nitro_detail>div:hover{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
@@ -245,14 +253,14 @@ section>.intro>.txt p{
 }
 .nitro_detail>.basic>p{
     position: absolute;
-    bottom:15px;
+    bottom:20px;
     left:15px;
     color:#0093E9;
     width: calc(100% - 30px);
 }
 .nitro_detail>.nitro>p{
     position: absolute;
-    bottom:15px;
+    bottom:20px;
     left:15px;
     color: #C850C0;
     width: calc(100% - 30px);
@@ -268,4 +276,93 @@ section>.intro>.txt p{
 }
 .nitro_detail>.nitro:has(div p:hover) #sub{
     border-left:10px solid #C850C0  ;
+}
+@media (max-width:600px){
+/* ----------------------------------nitro_details */
+.nitro_detail{
+    padding:100px 20px;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+   }
+}
+@media (max-width:425px){
+/* ----------------------------------nitro_details */
+.nitro_detail{
+    padding:100px 10px;
+   }
+    /* heading */
+.nitro_detail>div>h1{
+    font-size:30px;
+}
+/* paragraph */
+.nitro_detail>div>div p{
+    font-size:16px;
+}
+/* icons */
+.nitro_detail>div i{
+    font-size:16px;
+}
+/* main */
+.nitro_detail>div{
+    min-height:400px;
+}
+}
+/* ------------------------gift the joy of nitro----------------------- */
+.gift{
+    padding: 50px 0;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    min-height: 300px;
+}
+/* personal */
+.gift>.personal{
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+/* heading */
+.gift>.personal>.txt>h1{
+    font-size: 50px;
+}
+/* paragraph */
+.gift>.personal>.txt>p{
+    padding-bottom: 10px;
+}
+/* flow */
+.gift>.personal>.txt .flow{
+    background-color: #8BC6EC;
+    display: inline-block;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.gift>.personal>.txt .flow h1:first-child{
+    color: var(--txt_white);
+    display: inline-block;
+    padding: 5px 30px;
+    font-size:24px;
+    font-weight:100;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+    transition: all 1s linear;
+    border: 2px solid white;
+}
+.gift>.personal>.txt .flow h1:first-child:hover{
+    transform: scale(1.1);
+    padding: 5px 50px;
+}
+.gift>.personal .flow h1:last-child{
+    background-color:#0093E9;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    transform: translateX(-165px);
+    z-index: 1;
+    border-radius: 30px;
+    transition: all 1s linear;
+}
+.gift>.personal .flow:has(h1:first-child:hover) h1:last-child{
+    transform: translateX(0px);
 }

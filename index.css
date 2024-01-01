@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 
-
 *{
     padding: 0px;
     margin: 0px;
@@ -21,10 +20,11 @@ nav .nav_title div:nth-child(1) p{
     width: 100%;
 }
 .laptop{
+    width: 100%;
     background-color:#191919;
-    height: 89vh;
+    min-height: 89vh;
     color: var(--text-color);
-    /* padding:300px 150px 200px ; */
+    padding:100px 150px 80px ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ nav .nav_title div:nth-child(1) p{
     align-items: center;
 }
 .top-icon{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,12 +75,13 @@ nav .nav_title div:nth-child(1) p{
 }
 /* other-downloads */
 .other-down{
-    padding: 250px 100px;
+    width: 100%;
+    padding: 80px 100px;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
-    gap: 50px;
+    gap: 40px;
 }
 .spacing{
     width: 100%;
@@ -88,17 +89,88 @@ nav .nav_title div:nth-child(1) p{
     background-color: white;
 }
 .bag{
-    background-color: #F3F3F3;
+    background-color: lightpink;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+.one-display img{
+    object-fit: cover;
+    width: 500px;
+    height: 400px;
+}
+.one-display{
+    padding: 100px 50px 0px;
+}
+.one-display h2{
+    font-size: 34px;
+    font-weight: 900;
+}
+.one-display p{
+    font-size: 27px;
+    color: var(--text-color);
+    font-weight: 900;
+    padding: 24px 30px;
+    border-radius: 50px;
+    background-color: black;
 }
 @media screen and (max-width:500px) {
     .laptop{
         flex-direction: column;
-        padding: 540px 10px 0px;
+        padding: 130px 10px 0px;
+    }
+    .text-lap{
+        width: 99%;
+    }
+    .text-lap h1{
+        font-size: 36px;
+        line-height: 30px;
+    }
+    
+    .win{
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .top-icon{
+        width: 90%;
+    }
+    .pic-lap{
+        width: 90%;
+        padding: 10px;
+    }
+    .pic-lap img{
+       max-width: 100%;
+        height: auto;
+    }
+    .other-down{
+        padding: 50px 20px;
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    }
+    .bag img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .spacing{
+        display: none;
+    }
+    .bag{
+        width: 99%;
+    }
+    .text-down{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:800px) {
+    .laptop{
+        padding: 130px 10px 0px;
+        flex-direction: column;
     }
     .text-lap{
         width: 99%;
@@ -110,17 +182,122 @@ nav .nav_title div:nth-child(1) p{
     .win{
         width: 100%;
         flex-direction: column;
+        gap: 20px;
     }
     .top-icon{
-        width: 90%;
+        width: 60%;
     }
     .pic-lap{
         width: 90%;
         padding: 10px;
     }
     .pic-lap img{
-        width: 300px;
-        height: 150px;
+        max-width: 100%;
+        height: auto;
+    }
+    .other-down{
+        grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+    }
+    .bag img{
+        width: 200px;
+        height: 200px;
         object-fit: cover;
+    }
+    .spacing{
+        display: none;
+    }
+    .bag{
+        width: 80%;
+    }
+    .text-down{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (min-width:800px) and (max-width:1200px) {
+    .laptop{
+        padding: 130px 10px 0px;
+    }
+    .text-lap{
+        width: 99%;
+    }
+    .text-lap h1{
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .win{
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .top-icon{
+        width: 60%;
+    }
+    .pic-lap{
+        width: 90%;
+        padding: 10px;
+    }
+    .pic-lap img{
+        max-width: 100%;
+        height: auto;
+    }
+    .other-down{
+        grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+    }
+    .bag img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+   
+    .bag{
+        width: 80%;
+    }
+    .text-down{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (min-width:1200px) and (max-width:1400px) {
+    .laptop{
+        padding: 10px 60px 0px;
+    }
+    .text-lap{
+        width: 99%;
+    }
+    .text-lap h1{
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .win{
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .top-icon{
+        width: 50%;
+    }
+    .pic-lap{
+        width: 90%;
+        padding: 10px;
+    }
+    .pic-lap img{
+        max-width: 100%;
+        height: auto;
+    }
+    .other-down{
+        grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+    }
+    .bag img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .bag{
+        width: 80%;
+    }
+    .text-down{
+        width: 80%;
+        flex-wrap: wrap;
     }
 }
