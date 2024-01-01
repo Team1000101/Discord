@@ -86,7 +86,7 @@
         <!-- 1st -->
         <div class="one-ios bag one-display">
           <h2>iOS</h2>
-          <p>Download</p>
+          <p class="download">Download</p>
           <img src="./images/ios.png" alt="ios image"/>
         </div>
         <!-- space -->
@@ -96,27 +96,54 @@
           <div class="spacing"> </div>
         <div class="one-andriod bag one-display">
           <h2>Android</h2>
-          <p>Download</p>
+          <p  class="download">Download</p>
           <img src="./images/android.png" alt="android image"/>
         </div>
         </div>
         <!-- 3rd -->
         <div class="one-linux bag one-display">
           <h2>Linux</h2>
-          <p>Download</p>
+          <div class="arrow">
+            <div>
+              <label for="down-arrow" class="arrow-download">Download
+                <i class="fa-solid fa-angle-down"></i>
+          </label>
+          <input type="checkbox" id="down-arrow">
+            </div>
+            <div class="show-one">
+              <p class="color-effect">deb</p>
+              <p class="color-effect">tar.gz</p>
+            </div>
+          </div>
           <img src="./images/desktop.png" alt="linux image"/>
         </div>
         <!-- 4th -->
         <div class="one-mac bag one-display">
           <h2>Mac</h2>
-          <p>Download</p>
+          <p  class="download">Download</p>
           <img src="./images/laptop-2.png" alt="mac image"/>
         </div>
         <!-- 5th -->
         <div class="one-text bag one-display">
           <h2>Feeling experimental?</h2>
           <h3>Try our Public Test Build and test new features before they launch.</h3>
-        
+          <div class="arrow">
+            <div class="check-arrow">
+              <label for="down-arrow-two" class="arrow-download">Download Public Test Build
+                <i class="fa-solid fa-angle-down"></i>
+              </label>
+              <input type="checkbox" id="down-arrow-two">
+              <div class="show-two">
+                <p class="color-effect">Mac</p >
+                <p class="color-effect">Linux deb</p >
+                <p class="color-effect">Linux tar.gz</p >
+                <p class="color-effect">Windows 32-bit</p>
+                <p class="color-effect">Windows 64-bit</p>
+                <p class="color-effect">Windows 64-bit(canary)</p>
+              </div>
+            </div>
+           
+          </div>
         </div>
       </div>
      </section>

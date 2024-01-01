@@ -107,17 +107,57 @@ nav .nav_title div:nth-child(1) p{
     padding: 100px 50px 0px;
 }
 .one-display h2{
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 900;
 }
-.one-display p{
-    font-size: 27px;
+.download,.arrow-download{
+    font-size: 25px;
     color: var(--text-color);
     font-weight: 900;
-    padding: 24px 30px;
+    padding: 20px;
     border-radius: 50px;
     background-color: black;
 }
+.arrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow input{
+    display: none;
+}
+.one-text{
+    padding: 100px 50px 30px;
+}
+.show-two{
+    background-color: white;
+    width: 90%;
+    padding: 5px;
+    display: none;
+}
+.check-arrow input:checked~ .show-two{
+    display: block;
+    background-color: white;
+    left: 10px;
+    top: 40px;
+    padding: 20px;
+    transition: 2s;
+    border-radius: 10px;
+}
+.color-effect{
+    padding: 10px;
+}
+.color-effect:hover{
+    background-color: lightslategray;
+    text-decoration: underline;
+    color: lightblue;
+    padding: 10px;
+}
+
+
+
+
 @media screen and (max-width:500px) {
     .laptop{
         flex-direction: column;
