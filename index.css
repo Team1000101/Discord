@@ -89,7 +89,7 @@ nav .nav_title div:nth-child(1) p{
     background-color: white;
 }
 .bag{
-    background-color: lightpink;
+    background-color: #F3F3F3;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -100,8 +100,8 @@ nav .nav_title div:nth-child(1) p{
 }
 .one-display img{
     object-fit: cover;
-    width: 500px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
 }
 .one-display{
     padding: 100px 50px 0px;
@@ -117,6 +117,11 @@ nav .nav_title div:nth-child(1) p{
     padding: 20px;
     border-radius: 50px;
     background-color: black;
+    cursor: var(--cursor);
+}
+.download:hover,.arrow-download:hover{
+    box-shadow: 3px 3px 3px 3px black;
+    transition: all 2s;
 }
 .arrow{
     width: 100%;
@@ -130,35 +135,33 @@ nav .nav_title div:nth-child(1) p{
 .one-text{
     padding: 100px 50px 30px;
 }
-.show-two{
+.show-one,.show-two{
     background-color: white;
-    width: 90%;
+    width: 100%;
     padding: 5px;
     display: none;
 }
-.check-arrow input:checked~ .show-two{
+.check-arrow-one input:checked~ .show-one,.check-arrow-two input:checked~ .show-two{
     display: block;
     background-color: white;
-    left: 10px;
-    top: 40px;
     padding: 20px;
     transition: 2s;
-    border-radius: 10px;
+    border-radius: 15px;
 }
-.color-effect{
+.color-effect:hover{
     padding: 10px;
 }
 .color-effect:hover{
-    background-color: lightslategray;
+    background-color: #F3F3F3;
     text-decoration: underline;
-    color: lightblue;
+    color: #4942E4;
     padding: 10px;
 }
 
 
 
 
-@media screen and (max-width:500px) {
+@media only screen and (min-width:280px) and (max-width:500px) {
     .laptop{
         flex-direction: column;
         padding: 130px 10px 0px;
@@ -188,23 +191,33 @@ nav .nav_title div:nth-child(1) p{
         height: auto;
     }
     .other-down{
-        padding: 50px 20px;
-        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+        padding: 50px 10px;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     }
-    .bag img{
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
+    .one-text{
+        padding: 100px 5px 30px;
+    }
+    .one-display{
+        padding: 50px 10px 10px;
+    }
+    .one-display img{
+        max-width: 100%;
+        height: auto;
     }
     .spacing{
         display: none;
     }
     .bag{
-        width: 99%;
+        width: 98%;
     }
     .text-down{
         width: 80%;
         flex-wrap: wrap;
+    }
+    
+    .download,.arrow-download{
+        font-size: 18px;
+        padding: 6px;
     }
 }
 @media only screen and (min-width:500px) and (max-width:800px) {
@@ -236,18 +249,19 @@ nav .nav_title div:nth-child(1) p{
         height: auto;
     }
     .other-down{
-        grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        padding: 20px 10px;
+        gap: 15px;
     }
-    .bag img{
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
+    .one-display img{
+        max-width: 100%;
+        height: auto;
     }
     .spacing{
         display: none;
     }
     .bag{
-        width: 80%;
+        width: 98%;
     }
     .text-down{
         width: 80%;
@@ -284,12 +298,10 @@ nav .nav_title div:nth-child(1) p{
     .other-down{
         grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
     }
-    .bag img{
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
+    .one-display img{
+        max-width: 100%;
+        height: auto;
     }
-   
     .bag{
         width: 80%;
     }
@@ -328,10 +340,9 @@ nav .nav_title div:nth-child(1) p{
     .other-down{
         grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
     }
-    .bag img{
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
+    .one-display img{
+        max-width: 100%;
+        height: auto;
     }
     .bag{
         width: 80%;
