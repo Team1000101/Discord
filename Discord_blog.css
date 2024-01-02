@@ -1033,6 +1033,10 @@ nav .nav_title div:nth-child(4) p{
     .box16 p{
         line-height:20px ;
     }
+    .box16 h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
     .img-15{
         width:100%;
     }
@@ -1046,10 +1050,6 @@ nav .nav_title div:nth-child(4) p{
     } .box18{
         height: 300px;
         margin-bottom:20px ;
-    }
-    .box16 h2{
-        font-size: 30px;
-        line-height: 30px;
     }
     .img-16{
         height: 70%;
