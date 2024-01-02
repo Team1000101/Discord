@@ -865,7 +865,7 @@ nav .nav_title div:nth-child(4) p{
 .container3{
     min-height: 130vh;
     width: 100%;
-    padding-top:50px ;
+    padding-top: 50px;
 }                 
                           /* ---------------boxes-4 --------------- */
 .boxes-4{
@@ -925,6 +925,7 @@ nav .nav_title div:nth-child(4) p{
                        /* -----------box18-------- */
 .box18{
     height: 55%;
+    margin-bottom: 30px;
 }
                                   /* ----------img-16------------- */
 .img-16{
@@ -1201,6 +1202,7 @@ nav .nav_title div:nth-child(4) p{
 .box26{
     width:50% ;
     height:100%;
+    margin-bottom: 30px;
 }
                         /* --------------p TAg in box26------------- */
 .box26 p{
@@ -1217,7 +1219,7 @@ nav .nav_title div:nth-child(4) p{
                            /* ----------------img-21-------------- */
 .img-21{
     width:100%;
-    height:70%;
+    height:100%;
     border-radius: 5px;
 }
 .box27{
@@ -1248,7 +1250,7 @@ nav .nav_title div:nth-child(4) p{
     width:100% ;
     display: flex;
     gap:10px;
-    height:100%;
+    height:50%;
 }
                                        /* -----------------box29---------------- */
 .box29{
@@ -1445,7 +1447,9 @@ nav .nav_title div:nth-child(4) p{
     display: flex;
     gap:10px;
     padding: 10px;
-    height: 50%;
+    height: 65%;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
                            /* -------------------box26-------------- */
 .box34{
@@ -1504,6 +1508,7 @@ nav .nav_title div:nth-child(4) p{
 .box37{
     width:50% ;
     height:50%;
+    
 }
                           /* ------------------------p tag---------------------- */
 .box37 p{
