@@ -16,9 +16,12 @@ nav .nav_title div:nth-child(1) p{
     --text-color:white;
     --cursor:pointer;
 }
+/* overall-div */
 .main-look{
     width: 100%;
 }
+
+/* laptop view */
 .laptop{
     width: 100%;
     background-color:#191919;
@@ -98,6 +101,7 @@ nav .nav_title div:nth-child(1) p{
     gap: 30px;
     width: 100%;
 }
+/* one display */
 .one-display img{
     object-fit: cover;
     max-width: 100%;
@@ -111,10 +115,10 @@ nav .nav_title div:nth-child(1) p{
     font-weight: 900;
 }
 .download,.arrow-download{
-    font-size: 25px;
+    font-size: 20px;
     color: var(--text-color);
     font-weight: 900;
-    padding: 20px;
+    padding: 7px;
     border-radius: 50px;
     background-color: black;
     cursor: var(--cursor);
@@ -190,6 +194,7 @@ nav .nav_title div:nth-child(1) p{
        max-width: 100%;
         height: auto;
     }
+    /* other download */
     .other-down{
         padding: 50px 10px;
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
@@ -222,8 +227,7 @@ nav .nav_title div:nth-child(1) p{
 }
 @media only screen and (min-width:500px) and (max-width:800px) {
     .laptop{
-        padding: 130px 10px 0px;
-        flex-direction: column;
+        padding: 130px 25px 0px;
     }
     .text-lap{
         width: 99%;
@@ -235,10 +239,10 @@ nav .nav_title div:nth-child(1) p{
     .win{
         width: 100%;
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
     }
     .top-icon{
-        width: 60%;
+        width: 80%;
     }
     .pic-lap{
         width: 90%;
@@ -248,17 +252,22 @@ nav .nav_title div:nth-child(1) p{
         max-width: 100%;
         height: auto;
     }
+    /* other download */
     .other-down{
         grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
         padding: 20px 10px;
         gap: 25px;
     }
+    .one-text{
+        padding: 100px 5px 30px;
+    }
+    .one-display{
+        padding: 50px 10px 10px;
+    }
+        
     .one-display img{
         max-width: 100%;
         height: auto;
-    }
-    .spacing{
-        display: none;
     }
     .bag{
         width: 98%;
@@ -295,15 +304,17 @@ nav .nav_title div:nth-child(1) p{
         max-width: 100%;
         height: auto;
     }
+    /* other -download */
     .other-down{
-        grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        padding: 50px 30px;
     }
     .one-display img{
         max-width: 100%;
         height: auto;
     }
     .bag{
-        width: 80%;
+        width: 100%;
     }
     .text-down{
         width: 80%;
@@ -337,6 +348,7 @@ nav .nav_title div:nth-child(1) p{
         max-width: 100%;
         height: auto;
     }
+    /* other download */
     .other-down{
         grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
     }
