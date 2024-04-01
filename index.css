@@ -153,9 +153,6 @@ nav .nav_title div:nth-child(1) p{
     border-radius: 15px;
 }
 .color-effect:hover{
-    padding: 10px;
-}
-.color-effect:hover{
     background-color: #F3F3F3;
     text-decoration: underline;
     color: #4942E4;
@@ -276,6 +273,10 @@ nav .nav_title div:nth-child(1) p{
         width: 80%;
         flex-wrap: wrap;
     }
+    .download,.arrow-download{
+        font-size: 18px;
+        padding: 6px;
+    }
 }
 @media only screen and (min-width:800px) and (max-width:1200px) {
     .laptop{
@@ -319,6 +320,10 @@ nav .nav_title div:nth-child(1) p{
     .text-down{
         width: 80%;
         flex-wrap: wrap;
+    }
+    .download,.arrow-download{
+        font-size: 16px;
+        padding: 6px;
     }
 }
 @media only screen and (min-width:1200px) and (max-width:1400px) {
